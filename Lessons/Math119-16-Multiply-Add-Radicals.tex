@@ -1,0 +1,361 @@
+% !TEX root=../MA119-Main.tex
+\paragraph*{Product and Quotient Rules for Radicals}
+	If $\sqrt[n]{a}$ and $\sqrt[n]{b}$ are real numbers, then\\
+	\centerline{${\sqrt[n]a}{\sqrt[n]b}=\sqrt[n]{ab}$.}
+
+	If $\sqrt[n]a$ and $\sqrt[n]b$ are real numbers and $b\neq 0$, then\\
+	\centerline{$\dfrac{\sqrt[n]a}{\sqrt[n]b}=\sqrt[n]{\dfrac ab}.$}
+
+	\begin{example}
+		Simplify the expression.\\
+		\begin{enumerate*}[label={(\arabic*)~}]
+			% \item $\sqrt{2x}\sqrt{6x}$
+			\item $\sqrt[4]{8xy^4}\sqrt[4]{2x^7y}$.
+			\item $\dfrac{\sqrt[5]{96x^9y^3}}{\sqrt[5]{3x^{-1}y}}$.\hfill\null
+		\end{enumerate*}
+	\end{example}
+	\begin{solution}\mbox{}
+		\begin{enumerate}[label={\emph{(\arabic*)}~}]
+			% \item $\sqrt{2x}\sqrt{6x}=\sqrt{2x\cdot 6x}=\sqrt{(2x)^2\cdot 3}=\sqrt{(2x)^2}\sqrt{3}=2x\sqrt3$.
+			\item $\sqrt[4]{8xy^4}\sqrt[4]{2x^7y}=\sqrt[4]{(8xy^4)\cdot (2x^7y)}=\sqrt[4]{16x^8y^5}=\sqrt[4]{2^4(x^2)^4y^4\cdot y}=2x^2y\sqrt[4]{y}$.
+			\item $\dfrac{ \sqrt[5]{96x^9y^3} }{ \sqrt[5]{3x^{-1}y} }=\sqrt[5]{\dfrac{96x^9y^3}{3x^{-1}y}}=\sqrt[5]{32x^{10}y^2}=\sqrt[5]{(2x^2)^5\cdot y^2}=2x^2\sqrt[5]{y^2}$.
+		\end{enumerate}
+	\end{solution}
+
+
+\paragraph*{Combining Like Radicals}
+	Two radicals are called {\dfn{like radicals}} if they have the same index and the same radicand.  We add or subtract like radicals by combining their coefficients.
+
+	\begin{example}
+		Simplify the expression.
+		\[
+			\sqrt{8x^3}-\sqrt{(-2)^2 x^4}+\sqrt{2x^5}.
+		\]
+	\end{example}
+	\begin{solution}
+		\[
+			\sqrt{8x^3}-\sqrt{(-2)^2 x^4}+\sqrt{2x^5}=2x\sqrt{2x}-2x^2+x^2\sqrt{2x}=(x^2+2x)\sqrt{2x}-2x^2.
+		\]
+	\end{solution}
+
+
+
+
+\paragraph*{Multiplying Radicals}
+	Multiplying radical expressions with many terms is similar to that multiplying polynomials with many terms.
+
+	\begin{example}
+		Simplify the expression.
+		\[
+			(\sqrt{2x}+2\sqrt{x})(\sqrt{2x}-3\sqrt{x}).
+		\]
+	\end{example}
+	\begin{solution}
+		\[
+			\begin{split}
+				(\sqrt{2x}+2\sqrt{x})(\sqrt{2x}-3\sqrt{x})=&\sqrt{2x}\cdot\sqrt{2x}-3\sqrt{x}\cdot\sqrt{2x}+2\sqrt{x}\cdot\sqrt{2x}-6\sqrt{x}\cdot\sqrt{x}\\
+				=&2x-3x\sqrt{2}+2x\sqrt{2}-6x\\
+				=&-4x-x\sqrt{2}\\
+				=&-(4+\sqrt{2})x.
+			\end{split}
+		\]
+	\end{solution}
+
+
+
+\paragraph*{Rationalizing Denominators}
+	Rationalizing denominator means rewriting a radical expression into an equivalent expression in which the denominator no longer contains radicals.
+
+	\begin{example}
+		Rationalize the denominator.\\
+		\begin{enumerate*}[label={(\arabic*)~}]
+			% \item $\sqrt{2x}\sqrt{6x}$
+			\item $\dfrac{1}{2\sqrt{x^3}}$
+			\item $\dfrac{\sqrt{x}+\sqrt{y}}{\sqrt{x}-\sqrt{y}}$\hfill\null
+		\end{enumerate*}
+	\end{example}
+	\begin{solution}\mbox{}
+		\begin{enumerate}[label={\emph{(\arabic*)}~}]
+			% \item $\sqrt{2x}\sqrt{6x}$
+			\item In this case, to get rid of the radical in the bottom, we multiply the expression by $\dfrac{\sqrt{x}}{\sqrt{x}}$ so that the radicand in the bottom becomes a perfect power.
+			      \[
+					\dfrac{1}{2\sqrt{x^3}}=\dfrac{1}{2\sqrt{x^3}}\cdot\dfrac{\sqrt{x}}{\sqrt{x}}=\dfrac{\sqrt{x}}{2\sqrt{x^2}\sqrt{x}}=\dfrac{\sqrt{x}}{2x^2}.  
+				  \]
+			\item In this case, we use the formula $(a-b)(a+b)=a^2+b^2$. Multiply the expression by $\dfrac{\sqrt{x}+\sqrt{y}}{\sqrt{x}+\sqrt{y}}$.
+			      \[
+				      \dfrac{\sqrt{x}+\sqrt{y}}{\sqrt{x}-\sqrt{y}}=\dfrac{(\sqrt{x}+\sqrt{y})^2}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})}=\dfrac{x+y+2\sqrt{xy}}{x-y}.
+			      \]
+		\end{enumerate}
+	\end{solution}
+
+
+
+
+\newpage
+
+\begin{exercise}
+	Multiply and simplify.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\sqrt[3]{4}\sqrt[3]{5}$
+		\item $\sqrt{|x+7|}\sqrt{|x-7|}$
+		\item $\sqrt[3]{(x-y)^{\frac52}}\sqrt[3]{(x-y)^{\frac72}}$ 
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\sqrt[3]{20}$
+					\item $\sqrt{|x^2-49|}$
+					\item $(x-y)^2$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}Simplify the radical expression. Assume all variables are positive. \\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\sqrt{20xy}\cdot\sqrt{4xy^2}$
+		\item $\sqrt[3]{16}\cdot5\sqrt[3]{2}$
+		\item $\sqrt[5]{8x^4y^3z^3}\cdot\sqrt[5]{8xy^4z^8}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $4xy\sqrt{5y}$
+					\item  $10\sqrt[3]{4}$
+					\item  $2xyz^2\sqrt[5]{2y^2z}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Divide. Assume all variables are positive. Answers must be simplified.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\sqrt{\dfrac{9x^3}{y^8}}$
+		\item $\sqrt[3]{\dfrac{32x^4}{x}}$
+		\item $\dfrac{\sqrt{40x^5}}{\sqrt{2x}}$
+		\item $\dfrac{\sqrt[3]{24a^6b^4}}{\sqrt[3]{3b}}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\dfrac{3x\sqrt x}{y^4}$
+					\item $2x\sqrt[3]{4}$
+					\item $2x^2\sqrt5$
+					\item $2a^2b$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+
+
+\begin{exercise}
+	Add or subtract, and simplify. Assume all variables are positive.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $5\sqrt6+3\sqrt6$
+		\item $4\sqrt{20}-2\sqrt5$
+		\item $3\sqrt{32x^2}+5x\sqrt{8}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $8\sqrt{6}$
+					\item $6\sqrt5$
+					\item $22x\sqrt2$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+\begin{exercise}
+	Add or subtract, and simplify. Assume all variables are positive\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $7\sqrt{4x^2}+2\sqrt{25x}-\sqrt{16x}$
+		\item $5\sqrt[3]{x^2y}+\sqrt[3]{27x^5y^4}$
+		\item $3\sqrt{9y^3}-3y\sqrt{16y}+\sqrt{25y^3}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $14x+6\sqrt x$
+					\item $(5+3xy)\sqrt[5]{x^2y}$
+					\item $2y\sqrt y$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+\begin{exercise}
+	Multiply and simplify. Assume all variables are positive. \\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\sqrt2(3\sqrt3-2\sqrt2)$
+		\item $(\sqrt5+\sqrt7)(3\sqrt5-2\sqrt7)$
+		\item $(\sqrt3+\sqrt2)^2$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $3\sqrt6-4$
+					\item $1+\sqrt{35}$
+					\item $5+2\sqrt6$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+\begin{exercise}
+	Multiply and simplify. Assume all variables are positive. \\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $(\sqrt6-\sqrt5)(\sqrt6+\sqrt5)$
+		\item $(\sqrt{x+1}-1)(\sqrt{x+1}+1)$
+		\item $(2\sqrt[3]x+6)(\sqrt[3]x+1)$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $1$
+					\item $x$
+					\item $2\sqrt[3]{x^2}+8\sqrt[3]{x}+6$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Simplify the radical expression and rationalize the denominator. Assume all variables are positive.\\
+	\begin{enumerate*}[label={(\arabic*)~}, itemsep=1em]
+		\item $\sqrt[3]{\dfrac2{25}}$
+		\item $\sqrt{\dfrac{2x}{7y}}$
+		\item $\dfrac{\sqrt[3]{x}}{\sqrt[3]{3y^2}}$
+		\item $\dfrac{3x}{\sqrt[4]{x^3y}}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\dfrac{\sqrt[3]{10}}{5}$
+					\item $\dfrac{\sqrt{14xy}}{7y}$
+					\item $\dfrac{\sqrt[3]{9xy}}{3y}$
+					\item $\dfrac{3\sqrt[4]{xy^3}}{y}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+\begin{exercise}
+	Simplify the radical expression and rationalize the denominator. Assume all variables are positive.\\
+	\begin{enumerate*}[label={(\arabic*)~}, itemsep=1em]
+		\item $\dfrac{6\sqrt3}{\sqrt3-1}$
+		\item $\dfrac{\sqrt5-\sqrt3}{\sqrt5+\sqrt3}$
+		\item $\dfrac{3+\sqrt2}{2+\sqrt3}$
+		\item $\dfrac{2\sqrt{x}}{\sqrt x- \sqrt y}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $9+3\sqrt{3}$
+					\item $4-\sqrt{15}$
+					\item $6+2\sqrt2-3\sqrt3-\sqrt6$
+					\item $\dfrac{2x+2\sqrt{xy}}{x-y}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

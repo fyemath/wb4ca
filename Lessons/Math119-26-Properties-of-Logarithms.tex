@@ -1,0 +1,221 @@
+% !TEX root=../MA119-Main.tex
+
+
+\paragraph*{Properties of Logarithms}
+	For $M>0$, $N>0$, $b>0$ and $b\neq 1$, we have
+	\begin{enumerate}
+		\item (The product rule)\quad $\log_b(MN)=\log_bM+\log_bN$
+		\item (The quotient rule)\quad $\log_b(\frac MN)=\log_bM-\log_bN$.
+		\item (The power rule)\quad  $\log_b(M^p)=p\log_bM$, where $p$ is any real number.
+		\item (The change-of-base property)\quad  $\log_bM=\dfrac{\log_aM}{\log_ab}$, where $a>0$ and $a\neq 1$. In particular,
+		      \[\log_bM=\dfrac{\log M}{\log b} \textup{~~and~~} \log_bM=\dfrac{\ln M}{\ln b}.\]
+	\end{enumerate}
+
+	\begin{example}
+		Expand and simplify the logarithm $\log_2\left(\frac{8\sqrt{y}}{x^3}\right)$.
+	\end{example}
+	\begin{solution}
+		\[
+			\begin{split}
+				\log_2\left(\frac{8\sqrt{y}}{x^3}\right)&=\log_2(8\sqrt{y})-\log_2(x^3)\\
+				&=\log_28+\log_2(y^{\frac{1}{2}})-3\log_2x\\
+				&=3+\frac{1}{2}\log_2y-3\log_2x.
+			\end{split}
+		\]
+	\end{solution}
+
+
+	\begin{example}
+		Write the expression $2\ln(x-1)-\ln(x^2+1)$ as a single logarithm.
+	\end{example}
+	\begin{solution}
+		\[
+			2\ln(x-1)-\ln(x^2+1)=\ln((x-1)^2)-\ln(x^2+1)=\ln\left(\frac{(x-1)^2}{x^2+1}\right).
+		\]
+	\end{solution}
+
+
+	\begin{example}
+		Evaluate the logarithm $\log_34$ and round it to the nearest tenth.
+	\end{example}
+	\begin{solution}
+		On most scientific calculator, there are only the common logarithmic function \fbox{\textbf{LOG}} and the natural logarithmic function \fbox{\textbf{LN}}. To evaluate a logarithm based on a general number, we use the change-of-base property. In this case, the value of $\log_34$ is \[\log_34=\frac{\log4}{\log3}\approx 1.3.\]
+	\end{solution}
+
+	\begin{example}
+		Simplify the logarithmic expression
+		$$
+		\log_2(x^{\log 3})\log_32.
+		$$
+	\end{example}
+	\begin{solution}
+		\[
+			\log_2(x^{\ln 3})\log_32
+			=(\ln 3\log_2x)\log_32=\ln3\left(\frac{\ln x}{\ln 2}\right)\left(\frac{\ln 2}{\ln 3}\right)=\ln x.
+		\]
+	\end{solution}
+
+\newpage
+
+\begin{exercise}
+	Expand the logarithm and simplify.\\
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\log(100x)$
+		\item $\ln\left(\frac{10}{e^2}\right)$
+		\item $\log_b(\sqrt[3]{x})$
+		\item $\log_7(\frac{x^2\sqrt{y}}{z})$
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.5em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $2+\log x$
+					\item $\ln10-2$
+					\item $\frac13\log_b x$
+					\item $2\log_7x+\frac12\log_7y-\log_7z$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	Expand the logarithm and simplify.\\
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\log_b\sqrt{\frac{x^2y}{5}}$
+		% \item $\log_2(\frac{\sqrt{x}}{y-1})$
+		\item $\ln(\sqrt[3]{(x^2+1)y^{-2}})$
+		\item $\log(x\sqrt{10x}-\sqrt{10x})$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.5em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\log_bx+\frac12\log_by-\frac12\log_b5$
+					% \item $\frac12\log_2x-\log_2(y-1)$
+					\item $\frac13\ln(x^2+1)-\frac23\ln y$
+					\item $\frac12+\frac12\log x+\log(x-1)$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	Write as a single logarithm.\\
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\frac13\log x +\log y$
+		\item $\frac12\ln(x^2+1)-2\ln x$
+		\item $\frac13\log_2 x - 3\log_2(x+1)+1$
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\log(\sqrt[3]{x}y)$
+					\item $\ln\left(\frac{\sqrt{x^2+1}}{x^2}\right)$
+					\item $\log_2\left(\frac{2\sqrt[3]{x}}{(x+1)^3}\right)$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+\begin{exercise}
+	Write as a single logarithm.\\
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $2\log(2x+1)-\frac12\log x$
+		\item $3\ln x - 5\ln y + \frac{1}{2}\ln z$
+		\item $3\log_3 x-2\log_3(1-x)+\frac13\log_3 (x^2+1)$.
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\log\left(\frac{(2x+1)^2}{\sqrt{x}}\right)$
+					\item $\ln\left(\frac{x^3\sqrt{z}}{y^5}\right)$
+					\item $\log_3\left(\frac{x^3\sqrt[3]{x^2+1}}{(x-1)^2}\right)$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}Evaluate the logarithm and round it to the nearest hundredth.\\
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\log_2 10 $ %3.32192809
+		\item $\log_3 5  $ % 1.4649735207
+		\item $\dfrac{1}{\log_52}$
+		\item $\log_45-\log_29$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $3.32$
+					\item $1.46$
+					\item $2.32$
+					\item $-2.01$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Simplify the logarithmic expression $$
+	\frac{\log_3(x^2)\log_y\sqrt{3}}{\log x}.
+	$$
+\end{exercise}
+
+\vfill
+\begin{center} \hfill
+	\raisebox{0.5em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item 	$\frac1{\log y}$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

@@ -1,0 +1,335 @@
+% !TEX root=../MA119-Main.tex
+
+\paragraph*{Factor by Removing the GCF}
+	\dfn{The  greatest common factor (GCF)} of two terms is a polynomial with the \textbf{greatest coefficient} and of the \textbf{highest possible degree} that divides each term.
+
+	To \dfn{factor a polynomial} is to \textbf{express the polynomial as a product} of polynomials of lower degrees. The first and the easiest step is to factor out the GCF of all terms.
+	\begin{example}
+		Factor $4x^3y-8x^2y^2+12x^3y^3$.
+	\end{example}
+	\begin{solution}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Find the GCF of all terms.  The GCF of $4x^3y$, $-8x^2y^2$ and $12x^4y^3$ is $4x^2y$.
+			\item Write each term as the product of the GCF and the remaining factor.\\
+			      \centerline{$4x^3y=(4x^2y)\cdot x$, $-8x^2y^2=(4x^2y)\cdot (-2y)$, and $12x^4y^3=(4x^2y)(3xy^2)$.}
+
+			\item Factor out the GCF from each term.\\
+			      \centerline{$4x^3y-8x^2y^2+12x^3y^3=4x^2y\cdot(x-2y+3xy^2)$.}
+		\end{enumerate}
+	\end{solution}
+
+
+\paragraph*{Factor by Grouping}
+	For a four-term polynomial, in general, we will group them into two groups and factor out the GCF for each group and then factor further.
+
+	\begin{multicols}{2}
+		\begin{example}
+			Factor $2x^2-6xy+xz-3yz$.
+		\end{example}
+
+		\begin{solution}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Group the first two terms and the last two terms.
+				      \[
+					      \begin{split}
+						      &2x^2-6xy+xz-3yz\\
+						      =&(2x^2-6xy)+(xz-3yz)
+					      \end{split}
+				      \]
+				\item Factor out the GCF from each group.
+				      \[
+					      \begin{split}
+						      % &(2x^2-6xy)+(xz-3yz)\\
+						      =&2x(x-3y)+z(x-3y)
+					      \end{split}
+				      \]
+				\item Factor out the binomial GCF.
+				      \[
+					      \begin{split}
+						      % &2x(x-3y)+z(x-3y)\\
+						      =&(x-3y)(2x+z).
+					      \end{split}
+				      \]
+			\end{enumerate}
+		\end{solution}
+
+% \vfill
+% \null
+
+		\columnbreak
+
+		\begin{example}
+			Factor $ax+4b-2a-2bx$.
+		\end{example}
+
+		\begin{solution}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Group the first term with the third term and group the second term with the last term.
+				      \[
+					      \begin{split}
+						      &ax+4b-2a-2bx\\
+						      =&(ax-2a)+(-2bx+4b)
+					      \end{split}
+				      \]
+				\item Factor out the GCF from each group.
+				      \[
+					      \begin{split}
+						      % &(ax-2a)+(-2bx+4b)\\
+						      =&a(x-2)+(-2b)(x-2)
+					      \end{split}
+				      \]
+				\item Factor out the binomial GCF.
+				      \[
+					      \begin{split}
+						      % &a(x-2)+(-2b)(x-2)\\
+						      =&(x-2)(a-2b).
+					      \end{split}
+				      \]
+			\end{enumerate}
+		\end{solution}
+		% \vfill
+		% \null
+	\end{multicols}
+% \vspace*{-0.5\baselineskip}
+\begin{trick}
+	\textbf{Guess and check.} Once you factored one group, you may expect that the other group has the same binomial factor so that factoring may be continued.
+\end{trick}
+
+\paragraph*{Factor Binomials in Special Forms}\mbox{}
+
+	\begin{multicols}{3}
+		Difference of squares\\
+		\centerline{$a^2-b^2=(a-b)(a+b)$}
+
+		\begin{example}
+			Factor $25x^2-16$.
+		\end{example}
+
+		\begin{solution}\mbox{}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Recognize the binomial as a difference of squares.
+				      \[\begin{split}
+						      &25x^2-16\\
+						      =&(5x)^2-4^2
+					      \end{split}
+				      \]
+				\item Apply the formula.
+				      \[
+					      \begin{split}
+						      % &25x^2-16\\=&(5x)^2-4^2\\
+						      =&(5x-4)(5x+4).
+					      \end{split}
+				      \]
+			\end{enumerate}
+		\end{solution}
+
+		% \vfill
+		% \vspace*{\fill}
+
+		\columnbreak
+
+		Sum of Cubes\\
+		\centerline{$a^3+b^3=(a+b)(a^2-ab+b^2)$}
+
+		\begin{example}
+			Factor $x^3+27$.
+		\end{example}
+
+		\begin{solution}\mbox{}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Recognize the binomial as a sum of cubes.
+				      \[
+					      \begin{split}
+						      &x^3+27\\
+						      =&x^3+3^3
+					      \end{split}
+				      \]
+				\item Apply the formula.
+				      \[
+					      \begin{split}
+						      % x^3+27=&x^3+3^3\\
+						      =&(x+3)(x^2-3x+3^2)\\
+						      =&(x+3)(x^2-3x+9).
+					      \end{split}
+				      \]
+			\end{enumerate}
+		\end{solution}
+
+		% \vfill
+		% \vspace*{\fill}
+
+		\columnbreak
+
+		Difference of cubes\\
+		\centerline{$a^3-b^3=(a-b)(a^2+ab+b^2)$}
+		
+		\begin{example}
+			Factor $125x^3-8$.
+		\end{example}
+
+		\begin{solution}\mbox{}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Recognize the binomial as a difference of cubes.
+				      \[
+					      \begin{split}
+						      & 125x^3-8 \\
+						      =& (5x)^3-2^3
+					      \end{split}
+				      \]
+				\item Apply the formula.
+				      \[
+					      \begin{split}
+						      % &(5x)^3-2^3\\
+						      =&(5x-2)((5x)^2+2(5x)+2^2) \\
+						      =&(5x-2)(25x^2+10x+4).
+					      \end{split}
+				      \]
+			\end{enumerate}
+		\end{solution}
+
+	\end{multicols}
+
+\begin{example}
+	Factor $16x^3y+2y^4$ completely.
+\end{example}
+\begin{solution}
+	% \vspace*{-\baselineskip}
+\[
+	16x^3y+2y^4=2y(8x^3+y^3)=2y((2x)^3+y^3)=2y(2x+y)(4x^2-2xy+y^2).
+\]
+\end{solution}
+% \vspace*{-0.5\baselineskip}
+% \begin{example}
+% 	Factor $3x^4y-2x^3y+6x^2y-4xy$ completely.
+% \end{example}
+% \vspace*{-0.25\baselineskip}
+% \begin{solution}
+% \[
+% 	3x^4y-2x^3y-6x^2y+4xy=xy(3x^3-2x^2+6x-4)=xy[(3x^3-2x^2)+(6x-4)]=xy(3x-2)(x^2+2).
+% \]
+% \end{solution}
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%Practice%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Factor out the GCF.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $18x^2y^2-12xy^3-6x^3y^4$
+		\item $5x(x-7)+3y(x-7)$
+		\item $-2a^2(x+y)+3a(x+y)$  \hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $6xy^2(3x-2y-x^2y^2)$
+					\item $(x-7)(5x+3y)$
+					\item $a(x+y)(-2a+3)$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%Practice %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise} Factor by grouping.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $12xy-10y+18x-15$
+		\item $12ac-18bc-10ad+15bd$
+		\item $5ax-4bx-5ay+4by$ 
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(6x-5)(2y+3)$
+					\item $(2a-3b)(6c-5d)$
+					\item $(x-y)(5a-4b)$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Factor completely.
+
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $25x^2-4$
+		\item $8x^3-27$
+		\item $125y^3+1$ \hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(5x-2)(5x+2)$
+					\item  $(2x-3)(4x^2+6x+9)$
+					\item  $(5y+1)(25y^2-5y+1)$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}Factor completely.
+
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $27x^4+xy^3$
+		\item $16xy^3-2x^4$
+		\item $x^4+3x^3-4x^2-12x$ \hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $x(3x+y)(9x^2-3xy+y^2)$
+					\item  $2x(2y-x)(4y^2+2xy+x^2)$
+					\item $x(x-2)(x+2)(x+3)$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

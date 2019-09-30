@@ -1,0 +1,226 @@
+% !TEX root=../MA119-Main.tex
+
+\paragraph*{The Quadratic Formula}
+	The solutions of a quadratic equation in the \dfn{standard form} $ax^2+bx+c=0$ with $a\neq 0$ are given by \dfn{the quadratic formula}
+	\[
+		x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}.
+	\]
+	The quantity $b^2-4ac$ is called the \dfn{discriminant} of the quadratic equation.
+	\begin{itemize}
+		\item ~ If $b^2-4ac>0$, the equation has two real solutions.
+		\item ~ If $b^2-4ac=0$, the equation has one real solution.
+		\item ~ If $b^2-4ac<0$, the equation has two imaginary solutions (no real solutions).
+	\end{itemize}
+
+	\begin{example}
+		Determine the type and the number of solutions of the equation $(x-1)(x+2)=-3$.
+	\end{example}
+	\begin{solution}\mbox{}\vspace{-0.25em}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Rewrite the equation in the form $ax^2+bx+c=0$.
+			      \[
+				      \begin{split}
+					      (x-1)(x+2)&=-3\\
+					      x^2+x+1&=0
+				      \end{split}
+			      \]
+			\item Find the values of $a$, $b$ and $c$.
+			      \[
+				      a=1, b=1 \textup{~and~} c=1.
+			      \]
+			\item Find the discriminant $b^2-4ac$.
+			      \[
+				      b^2-4ac=1^2-4\cdot 1\cdot 1=-3.
+			      \]
+		\end{enumerate}
+		The equation has two imaginary solutions.
+	\end{solution}
+
+	\begin{example}
+		Solve the equation $2x^2-4x+7=0$.
+	\end{example}
+	\begin{solution}\mbox{}\vspace{-0.25em}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Find the values of $a$, $b$ and $c$.
+			      \[
+				      a=2, b=-4 \textup{~and~} c=7.
+			      \]
+			\item Find the discriminant $b^2-4ac$.
+			      \[
+				      b^2-4ac=(-4)^2-4\cdot 2\cdot 7=16-56=-40.
+			      \]
+			\item Apply the quadratic formula and simplify.
+			      \[
+				      x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}=\dfrac{-(-4)\pm\sqrt{-40}}{2\cdot 2}=\frac{4\pm 2\sqrt{10} \ii}{4}=1\pm\frac{\sqrt{10}}{2}\ii.
+			      \]
+		\end{enumerate}
+	\end{solution}
+
+	\begin{example}
+		Find the base and the height of a \textbf{triangle} whose base is three inches more than twice its height and whose area is $5$ square inches. Round your answer to the nearest tenth of an inch.
+	\end{example}
+	\begin{solution}\mbox{}\vspace{-0.25em}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item We may suppose the height is $x$ inches. The base can be expressed as $2x+3$ inches.
+			\item By the area formula for a triangle, we have an equation.
+			      \[\frac12 x(2x+3)=5.\]
+			\item Rewrite the equation in $ax^2+bx+c=0$ form.
+			      \[
+				      \begin{split}
+					      x(2x+3)&=10\\
+					      2x^2+3x-10&=0.
+				      \end{split}
+			      \]
+			\item By the quadratic formula, we have
+				  $$
+				  x=\frac{-3\pm\sqrt{3^2-4\cdot 2\cdot (-10)}}{2\cdot 2}=\frac{-3\pm \sqrt{89}}{4}.
+				  $$				  
+			      Since $x$ can not be negative, $x=\frac{-3+\sqrt{89}}{4}\approx 1.6$ and $2x+3\approx 6.2$.
+		\end{enumerate}
+		The height and base of the triangle are approximately $1.6$ inches and 6.2 inches respectively.
+	\end{solution}
+
+
+\newpage
+
+\begin{exercise}
+	Determine the number and the type of solutions of the given equation.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $x^2+8x+3=0$
+		\item $3x^2-2x+4=0$
+		\item $2x^2-4x+2=0$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item Two real solutions
+					\item Two imaginary solutions
+					\item One real solution
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	Solve using the quadratic formula.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $x^2+3x-7=0$
+		\item $2x^2=-4x+5$
+		\item $2x^2=x-3$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=\dfrac{-3\pm\sqrt{37}}{2}$
+					\item $x=\dfrac{-2\pm\sqrt{14}}{2}$
+					\item $x=\dfrac{1\pm\ii\sqrt{23}}{4}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+
+\begin{exercise}
+	Solve using the quadratic formula.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $(x-1)(x+2)=3$
+		\item $2x^2-x=(x+2)(x-2)$
+		\item $\frac12 x^2+x= \frac13$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=\dfrac{-1\pm\sqrt{21}}{2}$
+					\item $x=\dfrac{1\pm\ii\sqrt{15}}{2}$
+					\item $x=\dfrac{-3\pm \sqrt{15}}{3}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+\begin{exercise}
+	A \textbf{triangle} whose area is $7.5$ square meters has a base that is one meter less than triple the height. Find the length of its base and height. Round to the nearest hundredth of a meter.
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item The height is $\frac{1 + \sqrt{181}}{6}\approx 2.41$ meters and the base is $\frac{-1 + \sqrt{181}}{2}\approx 6.23$ meters. \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+\begin{exercise}
+	A \textbf{rectangular} garden whose length is $2$ feet longer than its width has an area 66 square feet. Find the dimensions of the garden, rounded to the nearest hundredth of a foot.
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item The width is $\sqrt{67}-1\approx 7.19$ feet and the length is $\sqrt{67}+1\approx 9.19$ feet.\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+A 2 hour river cruise goes in a constant speed 16 miles upstream and then back again. The river has a current of 3 miles an hour. What is the boat's speed, rounded to the nearest hundredth of a mile/hour? How long is the journey upstream, rounded to the nearest tenth of a hour?
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item The speed is $8+\sqrt{73}\approx 16.54$ miles/hour and the upstream journey is $16/(5+\sqrt{73})\approx 1.2$ hours.\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

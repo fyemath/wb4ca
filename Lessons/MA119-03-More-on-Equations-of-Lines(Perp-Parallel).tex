@@ -1,0 +1,193 @@
+% !TEX root=../MA119-Main.tex
+
+\begin{tcolorbox}[colback=white,colframe=cyan, title filled=false, coltitle=cyan, enhanced, attach boxed title to top center={yshift=-3mm,yshifttext=-1mm}, fonttitle=\bfseries, boxed title style={size=small,colback=white}, before upper={\parindent15pt},
+title={Horizontal and vertical lines}]
+A \dfn{horizontal line} is defined by an equation $y=b$. The slope of a horizontal line is simply zero.
+A \dfn{vertical line} is defined by an equation $x=a$. The slope of a vertical line is \textbf{undefined}. 
+
+A vertical line gives an example that a graph is not a function of $x$. Indeed, 
+the vertical line test fails. 
+
+
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white,colframe=cyan, title filled=false, coltitle=cyan, enhanced, attach boxed title to top center={yshift=-3mm,yshifttext=-1mm}, fonttitle=\bfseries, boxed title style={size=small,colback=white}, before upper={\parindent15pt},
+title={Get the explicit function from an equation}]
+\begin{multicols}{2}
+When studying equations of lines, we prefer the equation in the form $y=mx+b$ which tells us the slope and the $y$-intercept.  For a equation in general form, for instance, $2x+3y=3$, to rewrite it into the slope-intercept form, we simply solve for $y$ from the equation.
+
+\columnbreak
+
+\mbox{}
+\vspace*{-1em}
+\[\begin{split}
+2x+3y&=3\\
+3y&=-2x+3\\
+y&=-\frac23x+1. \vspace*{-1em}
+\end{split}\]
+Now, we get $f(x)=-\frac23x-1$.
+\end{multicols}
+
+
+\end{tcolorbox}
+
+
+
+\begin{tcolorbox}[colback=white,colframe=cyan, title filled=false, coltitle=cyan, enhanced, attach boxed title to top center={yshift=-3mm,yshifttext=-1mm}, fonttitle=\bfseries, boxed title style={size=small,colback=white}, before upper={\parindent15pt},
+title={Point-slope form equation of a line}]
+
+When the slope $m$ of a line and a point $(x_0, y_0)$ on the line are given, we can write down an equation for the line in the following form, called the point-slope form:\\
+\centerline{$y-y_0=m(x-x_0)$.}\\ 
+This equation simply comes from the slope formula\\
+\centerline{$m=\dfrac{y-y_0}{x-x_0}$.}\\ 
+\end{tcolorbox}
+
+
+
+\begin{tcolorbox}[colback=white,colframe=cyan, title filled=false, coltitle=cyan, enhanced, attach boxed title to top center={yshift=-3mm,yshifttext=-1mm}, fonttitle=\bfseries, boxed title style={size=small,colback=white}, before upper={\parindent15pt},
+title={Perpendicular and parallel lines}]
+\begin{multicols}{2}
+Any two vertical lines are parallel. Two non-vertical lines are \dfn{parallel} if and only if they \textbf{have the same slope}. 
+
+A line that is parallel to the line $y=mx+a$ has an equation $y=mx+b$, where $a\neq b$.
+
+
+\columnbreak
+
+Horizontal lines are perpendicular to vertical lines. Two non-vertical lines are \dfn{perpendicular} if and only if \textbf{the product of their slopes is $-1$}. 
+
+A line that is perpendicular to the line $y=mx+a$ has an equation $y=-\frac1m x+b$.
+
+
+\end{multicols}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white,colframe=cyan, title filled=false, coltitle=cyan, enhanced, attach boxed title to top center={yshift=-3mm,yshifttext=-1mm}, fonttitle=\bfseries, boxed title style={size=small,colback=white}, before upper={\parindent15pt},
+title={Find equations for perpendicular or parallel lines}]
+\begin{multicols}{2}
+\begin{example}
+Find an equation of the line that is perpendicular to the line $4x+2y=1$ and pass through the point $(-2,3)$.
+\begin{enumerate}[label={Step \arabic*.~~~}, itemsep=0em]
+\item Find the slope $m$ of the original line. For that, we can find the slope-intercept form equation by solving for $y$:  $y=2x-\frac12$. So $m=2$.
+\item Find the slope $m_\perp$ of the perpendicular line.\\ \centerline{$m_\perp=-\frac1m=-\frac12$.}
+\item Use the point-slope form.\\\centerline{$y-3=-\frac12(x+2)$.}
+\end{enumerate}
+
+\end{example}
+
+\columnbreak
+
+\begin{example}
+Find an equation of the line that is perpendicular to the line $4x-2y=1$ and pass through the point $(-3, 1)$.
+\begin{enumerate}[label={Step \arabic*.~~~}, itemsep=0em]
+\item Find the slope $m$ of the original line. For that, we can find the slope-intercept form equation by solving for $y$:  $y=-2x+\frac12$. So $m=-2$.
+\item Find the slope $m_\parll$ of the perpendicular line.\\ \centerline{$m_\parll=m=-2$.}
+\item Use the point-slope form.\\
+\centerline{$y-1=-2(x+3)$.}
+\end{enumerate}
+
+\end{example}
+
+\end{multicols}
+\end{tcolorbox}
+
+
+
+
+
+
+
+
+\newpage
+\begin{exercise}\label{par}
+Find the point-slope equation of a line with slope $5$ that passes though $(-2, 1)$.
+\end{exercise}
+
+\vfill
+
+\begin{exercise}\label{par}
+Find the point-slope equation of a line passing thought $(3, -2)$ and $(1,4)$.
+\end{exercise}
+
+\vfill
+
+
+\begin{exercise}\label{par}
+Find the slope of a line that is \begin{enumerate*}[label={\textup{~~(\arabic*)~~}}]\item parallel and \item perpendicular\end{enumerate*} to the line  $2x-5y=-3$.
+\end{exercise}
+
+\vfill
+
+
+
+\begin{exercise}\label{par}
+Find the point-slope form and then the slope-intercept form of the equation of the line parallel to $3x-y=4$ that passes through the point $(2,-3)$.
+\end{exercise}
+
+\vfill
+\begin{exercise}\label{perp}
+Find the slope-intercept form of the equation of the line that is perpendicular to $4y-2x+3=0$ and passes through the point $(2, -5)$
+\end{exercise}
+
+
+\vfill
+
+%\begin{exercise}
+%Graph respectively the parallel and perpendicular lines your found in Practice \ref{par} and \ref{perp}.
+%\begin{multicols}{2}
+%\begin{center}
+%\begin{tikzpicture}[scale=1, every node/.style={scale=0.7}]
+% \begin{axis}[grid=both, unit vector ratio=1 1 1, ymin=-5,ymax=5,xmax=5,xmin=-5,xtick={-10,-9,...,9,10},ytick={-10,-9,...,9,10},minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$, 
+%x tick label style={yshift=0.5ex,font={\small}}, y tick label style={xshift=0.25ex, font={\small}}, label style ={at={(ticklabel cs:1.1)}, font={\small}}
+%]
+%% \addplot[thick, samples=100,domain=-3:3, name path=A, stealth-stealth]   {-1/2*x+1};           
+%%  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (0,1) {}; 
+%%  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (2,0) {};                
+%  \end{axis}
+%\end{tikzpicture}
+%\end{center}
+%
+%\columnbreak
+%
+%\begin{center}
+%\begin{tikzpicture}[scale=1, every node/.style={scale=0.7}]
+% \begin{axis}[grid=both, unit vector ratio=1 1 1, ymin=-5,ymax=5,xmax=5,xmin=-5,xtick={-10,-9,...,9,10},ytick={-10,-9,...,9,10},minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$, 
+%x tick label style={yshift=0.5ex,font={\small}}, y tick label style={xshift=0.25ex, font={\small}}, label style ={at={(ticklabel cs:1.1)}, font={\small}}
+%]
+%% \addplot[thick, samples=100,domain=-3:3, name path=A, stealth-stealth]   {-1/2*x+1};           
+%%  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (0,1) {};  
+%%  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (-2,2) {};   
+%%  \addplot[blue, draw, -stealth] (0, 1)--(0,2) node[midway, xshift=1.5em] {rise=1}; 
+%%  \addplot[red, draw, -stealth] (0, 2)--(-2,2) node[midway, yshift=0.5em] {run=-2};          
+%  \end{axis}
+%\end{tikzpicture}
+%\end{center}
+%
+%\end{multicols}
+%
+%\end{exercise}
+
+
+\vspace{\fill}
+\hrule
+
+\begin{center}
+\raisebox{0.5em}{
+	\rotatebox{\rotationdegree}{
+		\parbox{\textwidth}{%\hspace*{5em}
+
+			\begin{enumerate*}[label={(\arabic*)~}]
+			\item  $y=5(x+2)+1$.
+			\item  $y=-3(x-1)+4$.
+			\item  $m_\parallel=\frac25$; $m_\perp=-\frac52$. 
+			\item  $y+3=3(x-2)$; $y=3x-9$.
+			\item $y=-2x-1$.
+			\end{enumerate*}
+
+		}
+	}
+}
+\end{center}
+
+

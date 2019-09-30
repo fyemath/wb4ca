@@ -1,0 +1,247 @@
+% !TEX root=../MA119-Main.tex
+
+
+\paragraph*{Complex Numbers}
+
+	The imaginary unit $\ii$ is defined as $\ii=\sqrt{-1}$. Hence $\ii^2=-1$.
+
+	If $b$ is a positive number, then $\sqrt{-b}=\ii\sqrt{b}$.
+
+	Let $a$ and $b$ are two real numbers. We define a complex number by the expression $a+b \ii$.
+	The number $a $ is called the real part and the number $b$ is called the imaginary part. If $b=0$,
+	then the complex number $a+b\ii=a$ is just the real number.
+	If $b\neq 0$, then we call the complex number $a+b\ii$ an imaginary number.
+	If $a=0$ and $b\neq 0$, then the complex number $a+b\ii=b\ii$ is called a purely imaginary number.
+
+	Adding, subtracting, multiplying, dividing or simplifying complex numbers are similar to those for radical expressions.
+	In particular, adding and subtracting become similar to combining like terms.
+
+
+	\begin{example}
+		Simplify and write your answer in the form $a+b\ii$, where $a$ and $b$ are real numbers and $\ii$ is the imaginary unit.\\
+		\begin{enumerate*}[label={(\arabic*)~}]
+			\item $\sqrt{-3}\sqrt{-4}$
+			\item $(4\ii-3)(-2+\ii)$
+			\item $\frac{-2+5\ii}{\ii}$
+			\item $\frac{1}{1-2\ii}$
+			\item $\ii^{2018}$
+			\hfill\null
+		\end{enumerate*}
+	\end{example}
+	\begin{solution}\mbox{}\vspace{-0.25em}
+		\begin{enumerate}[label=\emph{(\arabic*)~}]
+			\item
+			      \[
+				      \sqrt{-3}\sqrt{-4}=\ii\sqrt{3}\cdot\ii\sqrt{4}=\ii^2\cdot \sqrt3\cdot 2=-2\sqrt{3}.
+			      \]
+			\item
+			      \[
+				      \begin{split}
+					      (4\ii-3)(-2+\ii)&=4\ii\cdot(-2)+4\ii\cdot \ii+(-3)\cdot(-2)+(-3)\cdot\ii \\
+					      &=-8\ii+(-4)+6+(-3\ii)=2-11\ii.
+				      \end{split}
+			      \]
+			\item
+			      \[
+				      \begin{split}
+					      \frac{-2+5\ii}{\ii}&=\frac{(-2+5\ii)\ii}{\ii\cdot \ii}=\frac{-2\ii+5\ii^2}{\ii^2}\\
+					      &=\frac{-2\ii-5}{-1}=5+2\ii.
+				      \end{split}
+			      \]
+			\item
+			      \[
+				      \begin{split}
+					      \frac{1}{1-2\ii}&=\frac{(1+2\ii)}{(1-2\ii)(1+2\ii)}=\frac{1+2\ii}{1-(2\ii)^2}\\
+					      &=\frac{1+2\ii}{5}=\frac{1}{5}+\frac{2}{5}\ii.
+				      \end{split}
+			      \]
+			\item
+			      \[
+				      \ii^{2018}=\ii^{4\cdot 504+2}=(\ii^4)^{504}\cdot \ii^2=-1.
+			      \]
+			      \hfill\null
+		\end{enumerate}
+	\end{solution}
+
+
+\begin{example}
+	Evaluate $f(1+\ii)$ for the function $f(z)=z^2+\frac{z-1}{z+1}$. Write your answer in the form $a+b\ii$.
+\end{example}
+\begin{solution}
+	\[
+		\begin{aligned}
+			f(1+\ii)=&(1+\ii)^2+\frac{\ii}{2+\ii}\\
+			=&1+2\ii+\ii^2+\frac{\ii(2-\ii)}{4-\ii^2}\\
+			=&2\ii+\frac{1+2\ii}{5}\\
+			=&\frac15+\frac{12}{5}\ii.
+		\end{aligned}
+	\]
+\end{solution}
+
+\newpage
+
+\begin{exercise}
+	Add, subtract, multiply complex numbers and write your answer in the form $a+b\ii$.
+
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item  $\sqrt{-2}\cdot\sqrt{-3}$ 
+		\item  $\sqrt{2}\cdot\sqrt{-8}$
+		\item  $(5-2\ii)+(3+3\ii)$
+		\item $(2+6\ii)-(12-4\ii)$ 
+		\hfill\null
+	\end{enumerate*}
+
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $-\sqrt6$
+					\item $4\ii$
+					\item $8+\ii$ 
+					\item $-10+10\ii$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	Add, subtract, multiply complex numbers and write your answer in the form $a+b\ii$.
+
+\begin{enumerate*}[label={(\arabic*)~}]
+	\item  $(3+\ii)(4+5\ii)$
+	\item  $(7-2\ii)(-3+6\ii)$
+	\item  $(3-x\sqrt{-1})(3+x\sqrt{-1})$ 
+	\item  $(2+3\ii)^2$
+\hfill\null
+\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vspace{\stretch{1.5}}
+\begin{center} \hfill
+\raisebox{0.4em}{
+	\rotatebox{\rotationdegree}{
+		\parbox{\textwidth}{
+			\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+				\item $7+19\ii$ 
+				\item $-9+48\ii$
+				\item $x^2+9$
+				\item $-5+12\ii$
+				\hfill\null
+			\end{enumerate*}
+		}
+	}
+}
+\end{center}
+
+
+
+\begin{exercise}
+	Divide the complex number and write your answer in the form $a+b\ii$.
+	\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{2\ii}{1+\ii}$
+		\item $\dfrac{5-2\ii}{3+2\ii}$
+		\item $\dfrac{2+3\ii}{3-\ii}$
+		\item $\dfrac{4+7\ii}{-3\ii}$ 
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vspace{\stretch{2}}
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $1+\ii$
+					\item $\frac{11}{13}-\frac{16}{13}\ii$
+					\item $\frac{3}{10}+\frac{11}{10}\ii$
+					\item $-\frac{7}{3}+\frac{4}{3}\ii$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\newpage
+
+\begin{exercise}
+	Simplify the expression. %where $\ii=\sqrt{-1}$ is the imaginary unit.
+	\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $(-\ii)^{8}$
+		\item $\ii^{15}$
+		\item $\ii^{2017}$
+		\item $\dfrac1{\ii^{2018}}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $1$
+					\item $-\ii$
+					\item $\ii$
+					\item $-1$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Evaluate the function $p(x)=2x^2-3x+5$ at $x=1-\ii$.
+	Write your answer in the form $a+b\ii$.
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item $2-\ii$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	Evaluate the function $g(x)=\ii x^2-x+\frac{2}{x-1}$ at $x=\ii-1$.
+	Write your answer in the form $a+b\ii$.
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item $\frac{11}{5}-\frac75\ii$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

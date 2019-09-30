@@ -1,0 +1,279 @@
+% !TEX root = ../MA119-Main.tex
+
+\paragraph*{Properties of Exponents}
+For an integer $n$, and an expression $x$, the mathematical operation of the $n$-times repeated multiplication of $x$  is call exponentiation, written as $x^n$, that is,
+	\[
+		% x^n=\underset{n \text{~factors of~}x}{\underbrace{x\cdot x \cdots x}}.
+		x^n=\undercbrace{x\cdot x \cdots x}_{n \text{~factors of~}x}.
+	\]
+
+	
+	In the notation $x^n$, $n$ is called \dfn{the exponent}, $x$ is called \dfn{the base}, and $x^n$ is called \dfn{the power}, read as ``$x$ raised to the $n$-th power",  ``$x$ to the $n$-th power", ``$x$ to the $n$-th", ``$x$ to the power of $n$" or ``$x$ to the $n$".
+	%%%%
+	% \undercbrace is the command provided by the mtpro2 package see https://tex.stackexchange.com/questions/30090/how-can-i-get-text-underneath-an-underbrace
+	%%%
+
+	\begin{enumerate}
+		\item
+		      \begin{multicols}{2}
+			      \textbf{The product rule}
+			      \[x^m\cdot x^n=x^{m+n}.\]
+
+			      \textbf{Example:}
+			      \[2x^2\cdot (-3x^3)=-6x^5.\]
+		      \end{multicols}
+		\item
+		      \begin{multicols}{2}
+			      \textbf{The quotient rule} (for $x\neq 0$.)
+			      \[
+				      \dfrac{x^m}{x^n}=
+				      \begin{cases}
+					      x^{m-n}            & \parbox{0.25\textwidth}{if $m$ is greater than \\ or equal to $n$.}\\[1em]
+					      \dfrac{1}{x^{n-m}} & \text{if~} m \text{~is less than ~} n.
+				      \end{cases}
+			      \]
+
+			      \textbf{Example:}
+			      \[\frac{15x^5}{5x^2}=3x^3,\quad\quad \frac{-3x^2}{6x^3}=-\frac{1}{2x}\]
+		      \end{multicols}
+		\item
+		      \begin{multicols}{2}
+			      \textbf{The zero exponent rule} (for $x\neq 0$.)
+			      \[x^0=1.\]
+
+			      \textbf{Example:}
+			      \[(-2)^0=1, \quad\quad -x^0=-1\]
+		      \end{multicols}
+		\item
+		      \begin{multicols}{2}
+			      \textbf{The negative exponent rule} (for $x\neq 0$.)
+			      \[x^{-n}=\dfrac{1}{x^n} \quad\text{and}\quad \dfrac{1}{x^{-n}}=x^n.\]
+
+			      \textbf{Example:}
+			      \[(-2)^{-3}=\frac{1}{(-2)^3}=-\frac18, \quad\quad \frac{x^{-2}}{x^{-3}}=\frac{x^3}{x^2}=x.\]
+		      \end{multicols}
+		\item
+		      \begin{multicols}{2}
+			      \textbf{The power to a power rule}:
+			      \[\left(x^a\right)^b=x^{ab}.\]
+
+			      \textbf{Example:}
+			      \[\left(2^{2}\right)^3=2^6=64, \quad\quad \left(x^2\right)^3=x^6.\]
+		      \end{multicols}
+		\item
+		      \begin{multicols}{2}
+			      \textbf{The product raised to a power rule}:
+				  \[(xy)^n=x^ny^n.\]
+				  
+				%   \columnbreak
+				  
+			      \textbf{Example:}
+				  \[\left(-2x\right)^{2}=(-2)^2x^2=4x^2\] 
+		      \end{multicols}
+		\item 
+		% \vspace*{-2\baselineskip}	  
+		\begin{multicols}{2}
+			      \textbf{The quotient raised to a power rule} (for $y\neq 0$.)
+			      \[\left(\dfrac{x}{y}\right)^n=\dfrac{x^n}{y^n}.\]
+
+			      \textbf{Example:}
+			      \[
+					  \left(\dfrac{x}{-2}\right)^{3}=\dfrac{x^3}{(-2)^3}=-\dfrac{x^3}{8}.
+					%   ~ \left(\dfrac{-a^2}{b^3}\right)^2=\dfrac{(-a^2)^2}{(b^3)^2}=\dfrac{a^4}{b^6}.
+					\]
+			  \end{multicols}
+			  
+	\end{enumerate}
+
+
+
+\paragraph*{Order of Basic Mathematical Operations}
+	In mathematics, the order of operations reflects conventions about which procedure should be performed first. There are four levels (from the highest to the lowest):\\
+	\centerline{\textbf{Parenthesis}; \textbf{Exponentiation}; \textbf{Multiplication and Division}; \textbf{Addition and Subtraction}.} \\
+	Within the same level, the convention is to perform from the left to the right.
+
+
+	\begin{example}
+		Simplify. \textbf{Write with positive exponents.} 
+		$$
+		\left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
+		$$
+	\end{example}
+	% \vspace*{-\baselineskip}
+	\begin{solution}
+		$$
+		\left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}
+		=\left(\dfrac{x^3}{2z^{5}y^8}\right)^{-4}
+		=\left(\dfrac{2z^{5}y^8}{x^3}\right)^4
+		=\dfrac{2^4(z^{5})^4(y^8)^4}{(x^3)^4}
+		=\dfrac{16y^{32}z^{20}}{x^{12}}.
+		$$
+	\end{solution}
+
+	\begin{trick} \textbf{Simplify (at least partially) the problem first.}
+
+		To avoid mistakes when working with negative exponents, it's better to apply the negative exponent rule to change negative exponents to positive exponents and simplify the base first.
+	\end{trick}
+
+	% \vfill
+
+\newpage
+\begin{exercise}
+	Simplify. \textbf{Write with positive exponents.}
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		% \item $a^2a^3a^5$
+		\item $(3a^2b^3c^2)(4abc^2)(2b^2c^3)$
+		\item $\dfrac{4y^3z^0}{x^2y^2}$
+		\item $(-2)^{-3}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					% \item  $a^{10}$
+					\item  $24a^3b^6c^7$
+					\item $\frac{4y}{x^2}$
+					\item $-\frac{1}{8}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Simplify. \textbf{Write with positive exponents.}
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{-u^0v^{15}}{v^{16}}$
+		\item $(-2a^3b^2c^0)^3$
+		\item $\dfrac{m^5 n^{2}}{(mn)^3}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $-\frac{1}{v}$
+					\item $-8a^9b^6$
+					\item $\frac{m^2}{n}$
+					\hfill\null
+				\end{enumerate*}
+			}}}
+\end{center}
+
+\newpage
+
+\begin{exercise} Simplify. \textbf{Write with positive exponents.}
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $(-3a^2x^3)^{-2}$
+		\item $\left(\dfrac{-x^0y^3}{2wz^2}\right)^3$
+		\item $\dfrac{3^{-2}a^{-3}b^5}{x^{-3}y^{-4}}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\frac{1}{9a^4x^6}$
+					\item $-\frac{y^9}{8w^3z^6}$
+					\item  $\frac{b^5x^3y^4}{9a^3}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Simplify. \textbf{Write with positive exponents.}
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\left(-x^{-1}(-y)^2\right)^3$
+		\item $\left(\dfrac{6x^{-2}y^5}{2y^{-3}z^{-11}}\right)^{-3}$
+		\item $\dfrac{(3 x^{2} y^{-1})^{-3}(2 x^{-3} y^{2})^{-1}}{(x^{6} y^{-5})^{-2}}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $-\frac{y^6}{x^3}$
+					\item $\frac{x^6}{27y^{24}z^{33}}$
+					\item $\frac{x^{9}}{54 y^{9}}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+\begin{exercise}
+	A pizza shop offer 12-inches pizza and 8-inches pizza at the price \$12 and \$6 respectively.  With \$12, would you like to order one 12-inches and two 8-inches. Please explain.
+\end{exercise}
+
+\vfill
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item 12-inches pizza is better. Because the total area is bigger.
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. The circumference of a larger watermelon is approximately twice of the circumference of a smaller one. Which size of watermelons is cheaper if it was sold by weight? 
+\end{exercise}
+
+\vfill
+\begin{center}
+	\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item The larger one. Because the volume is 8 times larger.
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

@@ -1,0 +1,876 @@
+% !TEX root=../MA119-Main.tex
+
+\paragraph*{Factor Trinomials}
+	If a trinomial $ax^2+bx+c$, $A\neq 0$, can be factored, then it can be expressed as a product of two binomials: 
+	\[ax^2+bx+c=(mx+n)(px+q).\]
+	By simplify the product using the FOIL method and comparing coefficients, we observe that 
+	\[
+		a=\undercbrace{mn}_{\mathrm{F}}\quad\quad\quad 
+		b=\undercbrace{mq}_{\mathrm{O}}~\underset{+}{\underset{}{+}}~\undercbrace{np}_{\mathrm{I}}
+		\quad\quad\quad 
+		c=\undercbrace{nq}_{\mathrm{F}}
+		% A=\underset{\textup{F}}{\underbrace{mn}}\quad\quad\quad 
+		% B=\underset{\textup{O}}{\underbrace{mq}}~\underset{+}{\underset{}{+}}~\underset{\textup{I}}{\underbrace{np}} 
+		% \quad\quad\quad 
+		% C=\underset{\textup{L}}{\underbrace{nq}}
+	\]
+
+	A trinomial $ax^2+bx+c$ is also called a \dfn{quadratic polynomial}. The function defined by $f(x)=ax^2+bx+c$ is called a \dfn{quadratic function}.
+
+	\begin{trick} \textbf{Trial and error.}
+		The observation suggests to use trial and error to find the undetermined coefficients $m$, $n$, $p$, and $q$ from factors of $a$ and $c$ such that the sum of cross products $mq+np$ is $b$. A diagram as shown in the following examples can help check a trial.
+	\end{trick}
+
+	%\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~},
+	% 	 topsep=-1em,
+	%    itemsep=-1ex,
+	%    partopsep=1ex,
+	%    parsep=1ex,
+	% 	 leftmargin=*,
+	%	 %wide,
+	%	 itemindent=0em,
+	%]
+	%\item\label{factorA} Factoring A to find a pair of factors, say $A=mn$
+	%\item\label{factorC} Factoring C to find a pair of factors, say $C=pq$
+	%\item\label{checkB} Check whether $mq+np=B$ is true.
+	%\item \begin{enumerate}[label={\textbf{\textup{Case \arabic*:}}},
+	%	 topsep=-1em,
+	%    itemsep=-1ex,
+	%    partopsep=1ex,
+	%    parsep=1ex,
+	% 	 leftmargin=*,
+	%	 %wide,
+	%	 itemindent=0em,]
+	%\item If it is false, then repeat Step \ref{factorA}, \ref{factorC} and \ref{checkB}.
+	%\item If it is true, then factoring the trinomial as $ax^2+bx+c=(mx+n)(px+q)$.
+	%\end{enumerate}
+	%\end{enumerate}
+
+	% \vspace{-0.75\baselineskip}
+
+
+	%\begin{tikzpicture}
+	%  \matrix (m) [
+	%  matrix of math nodes,
+	%row sep=-\pgflinewidth,
+	%  column sep=-.5\pgflinewidth,
+	%  minimum width=2em,
+	%  ]
+	%  { 1 &{}&8 & \\
+	%    1 &{}&2 & \\
+	%    1 &{}&4 &  \\
+	%    2 & + & 4 &=6\\
+	%  };
+	%  \path
+	%    (m-2-1) edge (m-3-3)
+	%    (m-2-3) edge (m-3-1);
+	%  \draw[red] (m-4-1.north west) -- (m-4-4.north east);
+	%\end{tikzpicture}
+
+	\begin{multicols}{2}
+		\begin{example}
+			Factor $x^2+6x+8$.
+		\end{example}
+
+		\begin{solution}\mbox{}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Factor $a=1$:\\  \centerline{$1=1\cdot 1$.}
+				\item Factor $c=8$:\\  \centerline{$8=1\cdot 8=2\cdot 4$.}
+				\item Choose a proper combination of pairs of factors and check if the sum of cross product equals $b=6$:\\
+				      \centerline{$1\cdot 4+ 1\cdot 2=6$.}
+				      This step can be checked easily using the following diagram.\\
+				      \begin{minipage}{0.45\textwidth}
+					      \begin{center}
+						      \begin{tikzpicture}
+							      \matrix (m) [
+								      matrix of math nodes,
+								      row sep=-\pgflinewidth,
+								      column sep=-.5\pgflinewidth,
+								      minimum width=2em,
+							      ]
+							      { a=1=1\cdot1 & {} & c=8=2\cdot 4 &      \\
+								      1           & {} & 2            &      \\
+								      1           & {} & 4            &      \\
+								      1\cdot 2    & {\red +} & 1\cdot 4     & =6=b \\
+							      };
+							      \path
+							      (m-2-1) edge (m-3-3)
+							      (m-2-3) edge (m-3-1);
+							      \draw[red] (m-4-1.north west) -- (m-4-4.north east);
+						      \end{tikzpicture}
+					      \end{center}
+				      \end{minipage}
+				\item Factor the trinomial\\
+				      \centerline{$x^2+6x+8=(x+2)(x+4)$.}
+			\end{enumerate}
+		\end{solution}
+
+		\columnbreak
+
+		\begin{example}
+			Factor $2x^2+5x-3$.
+		\end{example}
+
+		\begin{solution}\mbox{}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Factor $a=2$:\\ \centerline{$1=1\cdot 2$.}
+				\item Factor $c=-3$:\\ \centerline{$-3=1\cdot (-3)=(-1)\cdot 3$.}
+				\item Choose a proper combination of pairs of factors and if the sum of cross products equals $b=5$:\\
+				      \centerline{$2\cdot 3+1\cdot(-1)=5$.}
+				      This step can be checked easily using the following diagram.\\
+				      \begin{minipage}{0.45\textwidth}
+					      \begin{center}
+						      \begin{tikzpicture}
+							      \matrix (m) [
+								      matrix of math nodes,
+								      row sep=-\pgflinewidth,
+								      column sep=-.5\pgflinewidth,
+								      minimum width=2em,
+							      ]
+							      { a=2=1\cdot 2 & {} & c=-3=3\cdot(-1) &      \\
+								      1            & {} & 3                           &      \\
+								      2            & {} & -1                          &      \\
+								      2\cdot 3     & {\red +} & 1\cdot(-1)      & =5=b \\
+							      };
+							      \path
+							      (m-2-1) edge (m-3-3)
+							      (m-2-3) edge (m-3-1);
+							      \draw[red] (m-4-1.north west) -- (m-4-4.north east);
+						      \end{tikzpicture}
+					      \end{center}
+				      \end{minipage}
+				\item Factor the trinomial\\
+				      \centerline{$2x^2+6x-3=(x+3)(2x-1)$.}
+			\end{enumerate}
+		\end{solution}
+
+	\end{multicols}
+
+\begin{trick}
+	\textbf{Use Auxiliary Problem.} 	Some higher degree polynomials may be rewrite as a trinomial after a  substitution. Factoring the trinomial helps factor the polynomial.
+\end{trick}
+
+	\begin{example}
+		Factor the trinomial completely.
+		\[4x^4-x^2-3\]
+	\end{example}
+	\vspace*{-0.5\baselineskip}
+	\begin{solution}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Let $x^2=y$. Then $4x^4-x^2-3=4y^2-y-3$.
+			\item Factor the trinomial in $y$:   $4y^2-y-3=(4y+3)(y-1)$.
+			\item Replace $y$ by $x^2$ and factor further.
+			      \[
+				      \begin{split}
+					      4x^4-x^2-3&=4y^2-y-3\\
+					      &=(4y+3)(y-1)\\
+					      &=(4x^2+3)(x^2-1)\\
+					      &=(4x^2+3)(x-1)(x+1).
+				      \end{split}
+			      \]
+		\end{enumerate}
+	\end{solution}
+
+\vfill\null
+
+\newpage
+
+\paragraph*{Solving a Quadratic Equation by Factoring and Applications}
+	A \dfn{quadratic equation} is a polynomial equation of degree $2$, for example,  $2x^2+5x-3=0$. The \dfn{standard form} of a quadratic equation is \\
+	\centerline{$a x^2+bx+c=0$,}
+	where $a$, $b$ and $c$ are numbers, and $a\neq 0$.
+
+	%The general strategy to solve a problem is to reduce the original problem to  problems that we know how to solve.
+	To solve a quadratic equation, we may first factor the polynomial and then apply the \dfn{zero product property}: \\
+	\centerline{$A\cdot B=0$ \quad ~~if and only if~~  \quad $A=0$ ~~or~~ $B=0$.}
+
+	% \vspace{-0.75\baselineskip}
+	\begin{multicols}{2}
+		\begin{example}
+			Solve the equation
+			\[2x^2+5x=3.\]
+		\end{example}
+		\begin{solution}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Rewrite the equation into ``\textit{\textbf{Expression}=0}\rq\rq{} form and factor.
+				      \[
+						  \begin{split}
+						      2x^2+5x&=3\\
+						      2x^2+5x-3&=0\\
+						      (2x-1)(x+3)&=0
+					      \end{split}
+				      \]
+				\item Apply the zero product property.
+				      \[2x-1=0\quad\text{or}\quad x+3=0.\]
+				\item Solve each equation.
+				      %\vspace*{-3em}
+				      %\vspace{\dimexpr-\parsep-\parskip\relax}
+				      %\begin{ncnter}
+				      \begin{alignat*}{3}
+					      2x-1 & =0       &  & \ctc{or} & x+3 & =0  \\
+					      2x   & =1       &  &          & x   & =-3 \\
+					      x    & =\frac12 &  & \ctc{or} & x   & =-3
+				      \end{alignat*}
+				      %\end{ncnter}
+				      %\vspace*{-4em}
+				      %\vspace*{\dimexpr-2\parsep-2\parskip\relax}
+				\item The solution set is $\{-3, \frac12\}$.
+				    %   \vspace*{-2\baselineskip}
+			\end{enumerate}
+		\end{solution}
+
+		\columnbreak
+
+		\begin{example}
+			Solve the equation
+			\[(x-2)(x+3)=-4.\]
+		\end{example}
+		\begin{solution}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+				\item Rewrite the equation into ``\textit{\textbf{Expression}=0}\rq\rq{} form and factor.
+				      \[
+						  \begin{split}(x-2)(x+3)&=-4\\
+						      x^2+x-6&=-4\\
+						      x^2+x-2&=0\\
+						      (x-1)(x+2)&=0
+					      \end{split}
+				      \]
+				\item Apply the zero product property.
+				      \[x-1=0\quad\text{or}\quad x+2=0.\]
+				\item Solve each equation.
+				      %\vspace{\dimexpr-\parsep-\parskip\relax}
+				      %\begin{ncnter}
+				      \begin{alignat*}{3}
+					      x-1 & =0 &  & \ctc{or} & x+2 & =0  \\
+					      x   & =1 &  & \ctc{or} & x   & =-2
+				      \end{alignat*}
+				      %\end{ncnter}
+				      %\vspace*{-4em}
+				      %\vspace*{\dimexpr-2\parsep-2\parskip\relax}
+				\item The solution set is $\{-2, 1\}$.
+				      % \vspace*{-\baselineskip}
+			\end{enumerate}
+		\end{solution}
+	\end{multicols}
+
+\begin{multicols}{2}
+		\begin{example}
+			A rectangular garden is surrounded by a path of uniform width. If the dimension of the garden is  $10$ meters by $16$ meters and the total area is 216 square meters, determine the width of the path.
+
+			\begin{center}
+				\begin{tikzpicture}[scale=0.8,every node/.style={scale=0.6, font=\small, minimum size=0.5pt, inner sep=0pt}]
+					\draw[name path=outside]  (0,0)--(5,0)--(5,4)--(0,4)--cycle;
+					\draw[name path=inside] (0.5,0.5)--(4.5,0.5)--(4.5,3.5)--(0.5,3.5)--cycle;
+					\tikzfillbetween[
+						of=outside and inside,
+						%    every even segment/.style={pattern=crosshatch}
+					]{pattern=crosshatch,pattern color=gray!50};
+					\draw[stealth-stealth] (0.5,2)--(4.5,2) node[pos=0.3, fill=white] {$16$};
+					\draw[stealth-stealth] (2.5,0.5)--(2.5,3.5) node[pos=0.7, fill=white] {$10$};
+					\draw[stealth-stealth] (0,2)--(0.5,2) node[midway, fill=white] {$x$};
+					\draw[stealth-stealth] (4.5,2)--(5,2) node[midway, fill=white] {$x$};
+					\draw[stealth-stealth] (2.5,0)--(2.5,0.5) node[midway, fill=white] {$x$};
+					\draw[stealth-stealth] (2.5,3.5)--(2.5,4) node[midway, fill=white] {$x$};
+				\end{tikzpicture}
+			\end{center}
+		\end{example}
+	\end{multicols}
+		\vspace*{-\baselineskip}
+		\begin{solution}
+			\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}, itemindent = 1ex,]
+				\item Suppose that the width of the frame is $x$ meters. Translate given information into expressions in $x$ and build an equation.\\
+				      Total Width: 2x+10\quad
+				      Total Length: 2x+16\quad
+				      Width $\times$ Length=Total Area:
+				      $(2x+10)(2x+16)=216.$
+				\item Solve the equation.
+				      \[
+						  \begin{split}(2x+10)(2x+16)&=216\\
+						      4x^2+52x+160&=216\\
+						      4x^2+52x-56&=0\\
+						      x^2+13x-14&=0\\
+						      (x+14)(x-1)&=0
+					      \end{split}
+				      \]
+				      \begin{alignat*}{3}
+					      x & =-14 &  & \ctc{or} & x & =1
+				      \end{alignat*}
+				\item So the width of the path is $1$ meter.
+				      % \vspace*{-2\baselineskip}
+			\end{enumerate}
+		\end{solution}
+
+	\begin{trick} \textbf{Understand the Problem.}
+		When solving a word problem, you may first outline what's known and what's unknown, and restate the problem using algebraic expressions. Once you reformulated the problem algebraically, you may solve it using your mathematical knowledge.
+	\end{trick}
+
+
+
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Factor the trinomial.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $x^2+4x+3$
+		\item $x^2+6x-7$
+		\item $x^2-3x-10$
+		\item $x^2-5x+6$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(x+1)(x+3)$
+					\item $(x-1)(x+7)$
+					\item $(x-5)(x+2)$
+					\item $(x-2)(x-3)$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise} Factor the trinomial.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $5x^2+7x+2$
+		\item $2x^2+5x-12$
+		\item $3x^2-10x-8$
+		\item $4x^2-12x+5$\hspace{\fill}\null
+	\end{enumerate*}
+\end{exercise}
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(x+1)(5x+2)$
+					\item $(x+4)(2x-3)$
+					\item $(x-4)(3x+2)$
+					\item $(2x-1)(2x-5)$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the equation by factoring.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $x^2-3x+2=0$
+		\item $2x^2-3x=5$
+		\item $(x-1)(x+3)=5$
+		\item $\frac13(2-x)(x+5)=4$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%%%%%
+\vspace*{\stretch{1.5}}
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)}]
+					\item  $\{1, 2\}$
+					\item  $\{-1, \frac52\}$
+					\item  $\{-4, 2\}$
+					\item  $\{-2, -1\}$ \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Find all real solutions of the equation by factoring.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $4(x-2)^2-9=0$
+		\item $2x^3-18x=0$
+		\item $3x^4-2x^2=1$
+		\item $x^3-3x^2-4x+12=0$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%%%%%
+\vspace*{\stretch{1.5}}
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)}]
+					\item  $\{\frac12, \frac72\}$
+					\item  $\{-3, 0, 3\}$
+					\item  $\{-1, 1\}$
+					\item  $\{-2, 2, 3\}$
+					 \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\begin{exercise}
+	Find the $x$-intercepts for each of the the following functions.
+
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $f(x)=2x^2-x-21$
+		\item $g(x)=(x+1)(x-2)-4$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vspace*{\stretch{1.5}}
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)}]
+					\item  $(-3, 0)$ and $(\frac72, 0)$
+					\item  $(-2, 0)$ and $(3,0)$
+					 \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	A paint measuring $3$ inches by $4$ inches is surrounded by a frame of uniform width. If the combined area of the paint and the frame is $30$ square inches, determine the width of the frame.
+	
+	\vspace*{-\baselineskip}
+	\null\hfill
+	\begin{tikzpicture}[scale=0.8]
+	\draw[name path=outside]  (0,0)--(5,0)--(5,4)--(0,4)--cycle;
+	\draw[name path=inside] (0.5,0.5)--(4.5,0.5)--(4.5,3.5)--(0.5,3.5)--cycle;
+	\tikzfillbetween[
+		of=outside and inside,
+	%    every even segment/.style={pattern=crosshatch}
+	] {pattern=crosshatch,pattern color=gray!50};
+	\end{tikzpicture}
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item  $1$ inch
+					 \hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+
+
+\begin{exercise}
+	A rectangle whose length is $2$ meters longer than its width  has an area $8$ square meters. Find the width and the length of the rectangle.
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item
+					width: $2$ meters\quad\quad length: $4$ meters.
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}
+	The product of two \textbf{consecutive negative odd} numbers is $35$. Find the numbers.
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item
+					The numbers are $-7$ and $-5$.
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}
+	In a right triangle, the long leg is 2 inches more than double of the short leg. The hypotenuse of the triangle is 1 inch longer than the long leg. Find the length of the shortest side.
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item
+					The shortest is the short leg which is 5 inches.
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}
+	A ball is thrown upwards from a rooftop. It will reach a maximum vertical height and then fall back to the ground. The height $h(t)$ of the ball from the ground after time $t$ seconds is $h(t)=-16t^2 + 48t + 160$ feet. How long it will take the ball to hit the ground?
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item $5$ seconds.
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+% \begin{exercise}
+% 	A toy factory estimates that the demand of a particular toy is  $300 -x$ units each week if the price is \$$x$ dollars per unit. Each week there is a fixed cost \$40,000 to produce the demanded toys.
+% 	% The weekly revenue is a function of the price given by $R(x)=x(30-x)$
+% \begin{enumerate}[label={(\arabic*)~}]
+% 	\item Find the function that models the weekly revenue, $R$, received when the selling price is \$$x$ per unit.
+% 	\item What the price range so the the revenue is nonnegative.
+% \end{enumerate}
+% \end{exercise}
+
+% %%%%%%%%%%
+% \vfill
+% \begin{center}\hfill
+% 	\raisebox{0.4em}{
+% 		\rotatebox{\rotationdegree}{
+% 			\parbox{\textwidth}{
+% 				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+% 					\item $R(x)=x(300-x)-40000$
+% 					\item $(\$100, \$200)$
+% 					\hfill\null
+% 				\end{enumerate*}
+% 			}
+% 		}
+% 	}
+% \end{center}
+
+
+
+\newpage
+
+\begin{exercise}
+	Each of trinomial below has a factor in the table. Match the letter on the left of a factor with a the number on the left a trinomial to decipher the following quotation.
+\begin{center}
+	\parbox{0.8\textwidth}{
+	" $\dfrac{\phantom{A}}{13}$\quad $\dfrac{\phantom{A}}{10~~2~~9~~15}$,\quad $\dfrac{\phantom{A}}{9~~5~~14}$\quad $\dfrac{\phantom{A}}{13}$\quad $\dfrac{\phantom{A}}{4~~3~~15~~7~~2~~1}$;\\[1em]
+	\phantom{"} $\dfrac{\phantom{A}}{13}$\quad $\dfrac{\phantom{A}}{11~~2~~2}$,\quad $\dfrac{\phantom{A}}{9~~5~~14}$\quad $\dfrac{\phantom{A}}{13}$\quad $\dfrac{\phantom{A}}{8~~5~~3~~6}$;\\[1em]
+	\phantom{"} $\dfrac{\phantom{A}}{13}$\quad $\dfrac{\phantom{A}}{14~~3}$,\quad $\dfrac{\phantom{A}}{9~~5~~14}$\quad $\dfrac{\phantom{A}}{13}$\quad $\dfrac{\phantom{A}}{12~~5~~14~~2~~15~~11~~1~~9~~5~~14}$. "
+	}
+\end{center}
+
+\begin{longtable}[]{@{}lllllll@{}}
+	\toprule
+	\textbf{A:}\quad\(3x-2\) & 
+	\textbf{B:}\quad\(2x+1\) & 
+	\textbf{C:}\quad\(x+6\) &
+	\textbf{D:}\quad\(x+7\) &
+	\textbf{E:}\quad\(2x-1\) & 
+	\textbf{F:}\quad\(3x-1\) & 
+	\textbf{G:}\quad\(x+10\) 
+\tabularnewline
+	\textbf{H:}\quad\(x-8\) &
+	\textbf{I:}\quad\(2x+9\) & 
+	\textbf{J:}\quad\(x-1\) & 
+	\textbf{K:}\quad\(x+3\) &
+	\textbf{L:}\quad\(2x-5\) &
+	\textbf{M:}\quad\(x+5\) & 
+	\textbf{N:}\quad\(x-7\) \tabularnewline
+	\textbf{O:}\quad\(x-13\) &
+	\textbf{P:}\quad\(5x-3\) &
+	\textbf{Q:}\quad\(4x-11\) & 
+	\textbf{R:}\quad\(x-9\) & 
+	\textbf{S:}\quad\(2x+3\) &
+	\textbf{T:}\quad\(x+4\) &
+	\textbf{U:}\quad\(7x+1\) \tabularnewline
+	\textbf{V:}\quad\(3x+5\) & 
+	\textbf{W:}\quad\(3x+4\) &
+	\textbf{X:}\quad\(8x+3\) &
+	\textbf{Y:}\quad\(x-14\) & 
+	\textbf{Z:}\quad\(5x-6\) & 
+	&\tabularnewline
+	\bottomrule
+	\end{longtable}
+
+\begin{multicols}{3}	
+\begin{enumerate}[series=decipher]
+	\item
+	  \(x^2-2x-24\)
+	\item
+	  \(6x^2+x-2\)
+	\item
+	  \(x^2-16x+39\)
+\end{enumerate}
+\end{multicols}
+\vfill
+\begin{multicols}{3}
+\begin{enumerate}[resume=decipher]
+	\item
+	  \(6x^2+13x-5\)
+	\item
+	  \(x^2-5x-14\)
+	\item
+	  \(3x^2-5x-12\)
+	\end{enumerate}
+\end{multicols}
+\vfill
+\begin{multicols}{3}
+\begin{enumerate}[resume=decipher] 
+	\item
+	  \(x^2-x-110\)
+	\item
+	  \(x^2-9\)
+	% \item
+	%   \(2x^2-x-10\)
+	\item
+	\(-3x^2+11x-6\)
+	\end{enumerate}
+\end{multicols}
+\vfill
+\begin{multicols}{3}
+\begin{enumerate}[resume=decipher]
+	% \item
+	%   \(-3x^2+11x-6\)
+	% \item
+	%   \(x^2+3x-18\)
+	\item
+	  \(x^2-10x+16\)
+%%%%%
+	  \item
+	  \(-2x^2+5x+12\)
+	\item
+	  \(42x^2-x-1\)
+	\end{enumerate}
+\end{multicols}
+% \vfill
+% \begin{multicols}{3}
+% \begin{enumerate}[resume=decipher]
+% 	\item
+% 	  \(20x^2+3x-9\)
+% 	\item
+% 	  \(-2x^2+5x+12\)
+% 	\item
+% 	  \(42x^2-x-1\)
+% 	\end{enumerate}
+% \end{multicols}
+\vfill
+\begin{multicols}{3}
+\begin{enumerate}[resume=decipher]	
+	  \item
+	  \(-2x^2-3x+27\)
+	\item
+	  \(x^2+14x+49\)
+	\item
+	  \(x^2-81\)
+	\end{enumerate}
+\end{multicols}
+\end{exercise}
+
+%%%%%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item "I hear and I forget, I see and I know, I do and I understand."
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+% \begin{exercise}
+% 	Each of trinomial below has a factor in the table. Match the letter on the left of a factor with a the number on the left a trinomial to decipher the following quotation.
+% \begin{center}
+% 	"$\frac{}{10~~5~~7}$ $\frac{}{4~~3~~3~~9}$ $\frac{}{11~~10~~5}$ $\frac{}{8~~5~~3~~6}$. $\frac{}{1~~12~~2}$ $\frac{}{13~~3~~16~~5~~1}$ $\frac{}{16~~14}$ $\frac{}{1~~3}$ $\frac{}{15~~5~~17~~2~~18~~14~~1~~10~~5~~17}$.. "
+% \end{center}
+
+% \begin{longtable}[]{@{}lllllll@{}}
+% 	\toprule
+% 	\textbf{A:}\quad\(3x-2\) & 
+% 	\textbf{B:}\quad\(2x+1\) & 
+% 	\textbf{C:}\quad\(x+6\) &
+% 	\textbf{D:}\quad\(x+7\) &
+% 	\textbf{E:}\quad\(2x-3\) & 
+% 	\textbf{F:}\quad\(3x-1\) & 
+% 	\textbf{Y:}\quad\(x+10\) 
+% \tabularnewline
+% 	\textbf{H:}\quad\(x-8\) &
+% 	\textbf{I:}\quad\(2x+9\) & 
+% 	\textbf{J:}\quad\(x-1\) & 
+% 	\textbf{K:}\quad\(x+3\) &
+% 	\textbf{L:}\quad\(2x-5\) &
+% 	\textbf{M:}\quad\(x+5\) & 
+% 	\textbf{N:}\quad\(x-7\) \tabularnewline
+% 	\textbf{O:}\quad\(x-13\) &
+% 	\textbf{P:}\quad\(5x-3\) &
+% 	\textbf{Q:}\quad\(4x-11\) & 
+% 	\textbf{R:}\quad\(x-9\) & 
+% 	\textbf{S:}\quad\(2x+3\) &
+% 	\textbf{T:}\quad\(x+4\) &
+% 	\textbf{U:}\quad\(7x+1\) \tabularnewline
+% 	\textbf{V:}\quad\(3x+5\) & 
+% 	\textbf{W:}\quad\(3x+4\) &
+% 	\textbf{X:}\quad\(8x+3\) &
+% 	\textbf{G:}\quad\(x-14\) & 
+% 	\textbf{Z:}\quad\(5x-6\) & 
+% 	&\tabularnewline
+% 	\bottomrule
+% 	\end{longtable}
+
+% \begin{multicols}{3}	
+% \begin{enumerate}[series=decipher]
+% 	\item
+% 	  \(x^2-2x+24\)
+% 	\item
+% 	  \(6x^2+x-15\)
+% 	\item
+% 	  \(x^2-16x+39\)
+% \end{enumerate}
+% \end{multicols}
+% \vfill
+% \begin{multicols}{3}
+% \begin{enumerate}[resume=decipher]
+% 	\item
+% 	  \(6x^2+13x-5\)
+% 	\item
+% 	  \(x^2-5x-14\)
+% 	\item
+% 	  \(3x^2-5x-12\)
+% 	\end{enumerate}
+% \end{multicols}
+% \vfill
+% \begin{multicols}{3}
+% \begin{enumerate}[resume=decipher] 
+% 	\item
+% 	  \(x^2-x-110\)
+% 	\item
+% 	  \(x^2-9\)
+% 	\item
+% 	  \(2x^2-x-10\)
+% 	\end{enumerate}
+% \end{multicols}
+% \vfill
+% \begin{multicols}{3}
+% \begin{enumerate}[resume=decipher]
+% 	\item
+% 	  \(-3x^2+11x-6\)
+% 	\item
+% 	  \(x^2+3x-18\)
+% 	\item
+% 	  \(x^2-10x+16\)
+% 	\end{enumerate}
+% \end{multicols}
+% \vfill
+% \begin{multicols}{3}
+% \begin{enumerate}[resume=decipher]
+% 	\item
+% 	  \(20x^2+3x-9\)
+% 	\item
+% 	  \(-2x^2+5x+12\)
+% 	\item
+% 	  \(42x^2-x-1\)
+% 	\end{enumerate}
+% \end{multicols}
+% \vfill
+% \begin{multicols}{3}
+% \begin{enumerate}[resume=decipher]	
+% 	  \item
+% 	  \(-2x^2-3x+27\)
+% 	\item
+% 	  \(x^2+14x+49\)
+% 	\item
+% 	  \(x^2-81\)
+% 	\end{enumerate}
+% \end{multicols}
+% \end{exercise}
+
+%%%%%%%%%%
+% \vfill
+% \begin{center}\hfill
+% 	\raisebox{0.4em}{
+% 		\rotatebox{\rotationdegree}{
+% 			\parbox{\textwidth}{
+% 				\begin{enumerate*}[label={\theexer~}]
+% 					\item "I hear and I forget, I see and I know, I do and I understand."
+% 					\hfill\null
+% 				\end{enumerate*}
+% 			}
+% 		}
+% 	}
+% \end{center}

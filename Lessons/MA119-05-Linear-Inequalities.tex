@@ -1,0 +1,586 @@
+% !TEX root=../MA119-Main.tex
+
+
+\paragraph*{Properties of Inequalities}
+
+An inequality defines a relationship between two expressions. The following properties show when the inequality relationship is preserved or reversed.
+	\begin{center}
+		\begin{tabular}{m{0.475\textwidth}|m{0.475\textwidth}}
+			\toprule
+			\hfill Property\hfill\null & \hfill Example \hfill\null   \\
+			\midrule
+			\parbox[c]{0.475\textwidth}{
+				\dfn{The additive property}                               \\
+				If $a<b$, then $a+c<b+c$, for any real number $c$.                                 \\
+				If $a<b$, then $a-c<b-c$,  for any real number $c$.}
+			\hfill\null                & \parbox[c]{0.425\textwidth}{
+
+				If $x+3<5$, then $x+3-3<5-3$.
+				Simplifying both sides, we get $x<2$.
+			}
+			\hfill\null                                               \\
+			\midrule
+			\parbox[c]{0.475\textwidth}{
+				\dfn{The positive multiplication property}                \\
+				If $a<b$ and $c$ is positive, then $ac<bc$.               \\
+				If $a<b$ and $c$ is positive, then $\frac ac<\frac bc$.
+			}
+			\hfill\null                & \parbox[c]{0.425\textwidth}{
+				If $2x<4$, then $\frac{2x}{2}<\frac{4}{2}$.
+				Simplifying both sides, we get $x<2$.
+			}
+			\hfill\null                             \\
+			\midrule
+			\parbox[c]{0.475\textwidth}{
+				\dfn{The negative multiplication property}                \\
+				If $a<b$ and $c$ is negative, then $ac>bc$.               \\
+				If $a<b$ and $c$ is negative, then $\frac ac>\frac bc$.
+			}
+			\hfill\null                & \parbox[c]{0.425\textwidth}{
+				If $1<2$, then $-2=1\cdot(-2)>2\cdot(-2)=-4$.             \\
+				If $-2x<4$, then $\frac{-2x}{-2}>\frac{4}{-2}$.
+				Simplifying both sides, we get $x>2$.}
+			\hfill\null                          \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	
+\begin{note}
+These properties also apply to $a\leq b$, $a>b$ and $a\geq b$.
+\end{note} 
+
+\begin{trick}
+	It's always better to view $a-c$ as $a+(-c)$. Because addition has the commutative property.
+\end{trick}
+
+\paragraph*{Compound Inequalities}
+A \dfn{compound inequality} is formed by two inequalities with the word ``\textit{and}\rq\rq{} or the word ``\textit{or}\rq\rq{}. For examples, the following are three commonly seen type compound inequalities:
+	$$
+	x-1>2\quad \text{and} \quad 2x+1<3,
+	$$
+	$$
+	3x-5<4\quad \text{or} \quad 3x-2>10,
+	$$
+	$$
+	-3\leq \frac{2x-4}{3}<2.
+	$$
+	The third compound inequality is simplified expression for the compound inequality $-3\leq \frac{2x-4}{3}$~ and ~ $\frac{2x-4}{3}<2$.
+
+\paragraph*{Interval Notations}
+Solutions to an inequality normally form an interval which has boundaries and should reflect inequality signs. Depending on the form of  an inequality, we may a single interval and a union of intervals. For example, suppose $a<b$, we have the following equivalent representations of inequalities.
+
+\begin{center}
+	\begin{tabular}{
+		>{\centering\arraybackslash}m{0.2\textwidth}|
+		>{\centering\arraybackslash}m{0.2\textwidth}|
+		>{\centering\arraybackslash}m{0.2\textwidth}|
+		>{\centering\arraybackslash}m{0.2\textwidth}
+		}
+		\toprule
+		$x<a$ &
+		$x\ge b$ &
+		$a\le x<b$ &
+		$x\le a$ or $x>b$   \\
+		\midrule
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[-latex] (-1,0)--(1, 0);
+				\draw[-), thick] (-1, 0)--(0.2,0);
+				\fill[pattern=north east lines] (-1,0) rectangle (0.2,0.1);
+					\node[below] at (0.2, -0.175) {$a$};
+				\end{tikzpicture}
+		\end{center}
+		&
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[-latex] (-1,0)--(1, 0);
+				\draw[[-, thick] (-0.2, 0)--(1,0);
+				\fill[pattern=north east lines] (-0.2,0) rectangle (1,0.1);
+					\node[below] at (-0.2, -0.1) {$b$};
+				\end{tikzpicture}
+		\end{center}
+		&
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[-latex] (-1,0)--(1, 0);
+				\draw[[-), thick] (-0.2, 0)--(0.5,0);
+				\fill[pattern=north east lines] (-0.2,0) rectangle (0.5,0.1);
+					\node[below] at (-0.2, -0.175) {$a$};
+					\node[below] at (0.5, -0.1) {$b$};
+				\end{tikzpicture}
+		\end{center}
+		&
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[-latex] (-1,0)--(1, 0);
+				\draw[[-, thick] (-0.2, 0)--(-1,0);
+				\draw[(-, thick] (0.5, 0)--(1,0);
+				\fill[pattern=north east lines] (-0.2,0) rectangle (-1,0.1);
+				\fill[pattern=north east lines] (1,0) rectangle (0.5,0.1);
+					\node[below] at (-0.2, -0.175) {$a$};
+					\node[below] at (0.5, -0.1) {$b$};
+				\end{tikzpicture}
+		\end{center}
+		\\[-1em]
+		\midrule
+		$(-\infty, a)$ &
+		$[b,\infty)$ &
+		$[a, b)$ &
+		$(-\infty, a]\cup (b,\infty)$\\
+		% \midrule
+		% $x<a$
+		% &
+		% \begin{center}
+		% 	\begin{tikzpicture}
+		% 		\draw[-latex] (-1,0)--(1, 0);
+		% 		\draw[-), thick] (-1, 0)--(0,0);
+		% 		\fill[pattern=north east lines] (-1,0) rectangle (0,0.1);
+		% 			\node[below] at (0, -0.1) {$a$};
+		% 		\end{tikzpicture}
+		% \end{center} 
+		% & $(-\infty, a)$\\
+		% \midrule
+
+		% $x<a$ or $x\ge b$
+		% & \begin{tikzpicture}
+		% 	\draw[-latex] (-2,0)--(2, 0);
+		% 	\draw[(-, thick] (-1.5, 0)--(-1,0);
+		% 	\draw[[-, thick] (0, 0)--(2,0);
+		% 	\fill[pattern=north east lines] (-1.5,0) rectangle (-1,0.1);
+		% 	\fill[pattern=north west lines] (0,0) rectangle (2,0.1);
+		% 		\node[below] at (-1.5, -0.1) {$a$};
+		% 		\node[below] at (0, -0.1) {$b$};
+		% 	\end{tikzpicture}
+		% & \\
+		% \midrule
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+
+\begin{trick}
+\textbf{Think backward.} To solve a problem, knowing what to expect helps you narrow down the gap step by step by comparing the goal and your achievement.
+
+An inequality (equation) is solved if the unknown variable is isolated. That's what to be expected. To isolate the unknown variable, you use comparisons to determine what mathematical operations should be applied. When an operation is applied to one side, the same operation should also be applied to the other side. For inequalities, we also need to determine whether the inequality sign should be preserved or reversed according to the operation.
+\end{trick}
+
+\newpage
+
+	\begin{multicols}{2}
+		\begin{example} 
+			Solve the linear inequality 
+			\[
+				2x+4>0.
+			\]
+		\end{example}
+		\begin{solution}
+			% \begin{center}
+				\begin{align*}
+&  & 2x+4 & >0  \\
+					\text{add $-4$}      &  & 2x   & >-4 \\
+					\text{divide by $2$} &  & x    & >-2
+				\end{align*}
+			% \end{center}
+			The solution set is $(-2, \infty)$.
+		\end{solution}
+
+		\columnbreak
+
+		\begin{example}
+			Solve the linear inequality 
+			\[
+				-3x-4<2.
+			\]
+		\end{example}
+		\begin{solution}
+			% \begin{center}
+				\begin{align*}
+					                                 &  & -3x-4 & <2       \\
+					\text{add $4$}                   &  & -3x   & <6  &  & \\
+					\text{divide by $-3$ and switch} &  & x     & >-2      %\parbox{0.1\textwidth}{\text{divide by $-3$ and}\\ \text{switch the sign}}
+				\end{align*}
+			% \end{center}
+			The solution set is $(-2, +\infty)$.
+		\end{solution}
+	\end{multicols}
+
+
+	\begin{multicols}{2}
+		\begin{example}
+			Solve the compound linear inequality 
+			\[
+			x+2<3\quad \text{and}\quad -2x-3<1.
+			\]
+		\end{example}
+		\begin{solution}
+			% \begin{center}
+				\begin{align*}
+					x+2 & <3 &  & \text{and} & -2x-3 & <1  \\
+					x   & <1 &  &            & -2x   & <4  \\
+					x   & <1 &  & \text{and} & x     & >-2
+				\end{align*}
+			% \end{center}
+			That is $-2<x<1$. The solution set is $(-2, 1)$.
+		\end{solution}
+
+
+		\columnbreak
+
+
+		\begin{example}
+			Solve the compound linear inequality  
+			\[
+			-x+4>2 \quad \text{or} \quad 2x-5\geq -3.
+			\]
+		\end{example}
+		\begin{solution}
+			% \begin{center}
+				\begin{align*}
+					-x+4 & >2  &  & \text{or} & 2x-5 & \geq -3 \\
+					-x   & >-2 &  &           & 2x   & \geq 2  \\
+					x    & <2  &  & \text{or} & x    & \geq 1
+				\end{align*}
+			% \end{center}
+			That is $x\geq 1$ or $x< 2$. The solution set is $(-\infty, +\infty)$.
+		\end{solution}
+	\end{multicols}
+
+
+
+	\begin{multicols}{2}
+		\begin{example}Solve the compound linear inequality
+			\[
+			-4\leq\dfrac{2x-4}{3}<2.
+			\]
+		\end{example}
+		\begin{solution}
+			% \begin{center}
+				\begin{alignat*}{2}
+					-4\leq  &  & \centermath{ \frac{2x-4}{3} } & <2  \\
+					-12\leq &  & \centermath{ 2x-4 }           & <6  \\
+					-8\leq  &  & \centermath{ 2x }             & <10 \\
+					-4\leq  &  & \centermath{ x }              & <5  
+				\end{alignat*}
+			% \end{center}
+			The solution set is $[-4, 5)$.
+		\end{solution}
+
+		\columnbreak
+
+
+		\begin{example}
+			Solve the compound linear inequality
+			\[
+			-1\leq \dfrac{-3x+4}{2}<3.
+			\]
+		\end{example}
+		\begin{solution}
+			% \begin{center}
+				\begin{alignat*}{2}
+					-1\leq &  & \centermath{ \frac{-3x+4}{2} } & <3        \\
+					-2\leq &  & \centermath{ -3x+4 }           & <6        \\
+					-6\leq &  & \centermath{ -3x }             & <2        \\
+					2\geq  &  & \centermath{  x }              & >-\frac23
+				\end{alignat*}
+			% \end{center}
+			The solution set is $(-\frac23, 2]$.
+		\end{solution}
+
+	\end{multicols}
+
+
+\begin{example}
+Suppose that $-1\le x < 2$. Find the range of $5-3x$. Write your answer in interval notation.
+\end{example}
+
+\begin{solution}
+	To get $5-3x$ from $x$, we need first multiply $x$ be $-3$ and then add $5$.
+	\begin{alignat*}{2}
+		-1\leq &  & \centermath{ x } & < 2        \\
+		3\geq &  & \centermath{ -3x }           & >-6        \\
+		8\geq &  & \centermath{~ 5-3x }             & >-1
+	\end{alignat*}
+	The range of $5-3x$ is $(-1, 8]$.
+\end{solution}
+
+% \begin{trick}
+% 	\textbf{Understand the Problem.} Understanding the known, the unknown and the condition of the given problem is crucial to solve the problem. Normally, by comparing the known and unknown, you will find the way to solve the problem.
+% \end{trick}
+
+\newpage
+% \paragraph{Exercises}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the linear inequality. \textbf{Write your answer in interval notation.}
+
+	\noindent
+	\begin{enumerate*}[label=\textup{(\arabic*)~}]
+		\item  $3x + 7 \leq 1$
+		\item  $2x-3>1$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(-\infty, -2]$
+					\item  $(2, +\infty) $\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the linear inequality. \textbf{Write your answer in interval notation.}
+
+	\noindent
+	\begin{enumerate*}[label=\textup{(\arabic*)~}]
+		\item  $4x + 7 > 2x-3$
+		\item  $3-2x\leq x-6 $
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(-5, +\infty)$
+					\item  $[3,+\infty)$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the compound linear inequality. \textbf{Write your answer in interval notation.}
+
+	\noindent
+	\begin{enumerate*}[label=\textup{(\arabic*)~}]
+		\item  $3x+2>-1$ ~~and~~~ $2x-7\leq 1$
+		\item  $4x -7< 5 $ ~~and~~~ $5x-2\geq 3$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(-1, 4]$
+					\item  $[1, 3) $\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the compound linear inequality. \textbf{Write your answer in interval notation.}
+
+	\noindent
+	\begin{enumerate*}[label=\textup{(\arabic*)~}]
+		\item  $-4\leq 3x+5<11$
+		\item  $7\geq 2x-3\geq -7$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $[-3, 2)$
+					\item  $[-2, 5] $\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+
+\begin{exercise}
+	Solve the compound linear inequality. \textbf{Write your answer in interval notation.}
+
+	\noindent
+	\begin{enumerate*}[label=\textup{(\arabic*)~}]
+		\item  $3x-5>-2$ ~~or~~~ $10-2x\leq 4$
+		\item  $2x + 7<5 $ ~~or~~~ $3x-8\geq x-2$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $(1, +\infty)$
+					\item  $(-\infty, -1)\cup [3, +\infty)$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+\begin{exercise}
+	Solve the compound linear inequality. \textbf{Write your answer in interval notation.}
+
+	\noindent
+	\begin{enumerate*}[label=\textup{(\arabic*)~}]
+		\item  $-2\leq \dfrac{2x-5}{3}<3$
+		\item  $-1< \dfrac{3x+7}{2}\leq 4$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item  $[-\frac12, 7)$
+									\item  $(-3, \frac13]$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the linear inequality. \textbf{Write your answer in interval notation.}
+\[
+\frac13x+1<\frac12(2x-3)-1
+\]
+
+\end{exercise}
+
+\vfill
+
+%%%%%%
+\begin{center}\hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+				\item	$(\frac{21}{4},+\infty)$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve the compound linear inequality. \textbf{Write your answer in interval notation.}
+	\[
+		0\le \frac25-\frac{x+1}{3}< 1
+	\]	
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{\rotatebox{\rotationdegree}{
+		\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item  $(\frac{-14}{5}, \frac15)$.
+					\hfill\null
+				\end{enumerate*}
+			}}}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Suppose $0< x \le 1$. Find the range of $-2x+1$. \textbf{Write your answer in interval notation.}	
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{\rotatebox{\rotationdegree}{
+		\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item  $[-1, 1)$.
+					\hfill\null
+				\end{enumerate*}
+			}}}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Suppose that $x+2y=1$ and $1\leq x< 3$. Find the range of $y$. \textbf{Write your answer in interval notation.}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{\rotatebox{\rotationdegree}{
+		\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item  $[0,1)$.
+					\hfill\null
+				\end{enumerate*}
+			}}}
+\end{center}
+
+\begin{exercise}
+	A toy store has a promotion “Buy one get the second one half price" on a certain popular toy. The sale price of the toy is \$20 each. Suppose the store makes more profit when you buy two. What do you think the store's purchasing price of the toy is?
+\end{exercise}
+
+\vfill
+\begin{center}\hfill
+	\raisebox{0.4em}{\rotatebox{\rotationdegree}{
+		\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item Less than \$10.
+					\hfill\null
+				\end{enumerate*}
+			}}}
+\end{center}

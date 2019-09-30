@@ -1,0 +1,91 @@
+% !TEX root=../MA119-Main.tex
+
+\chapter*{Preface to the First Edition}
+% \addcontentsline{toc}{chapter}{Preface} 
+\markboth{Preface}{} 
+
+This workbook mainly grew out of the author's worksheets for the college algebra course (MAD-119) at QCC of CUNY.
+It is intended to give a concise introduction to College Algebra.
+  
+
+In teaching College Algebra, I feel strongly that instructors should emphasize more the depth of reasoning and understanding rather than multitudes of approaches to similar types of questions. If you think carefully, whenever you choose an approach to solve a  problem, there is always a reason. Students should learn why an approach works instead of simply following the procedure which in nowadays can be done by computers. 
+
+Motivated by the above thought, in this concise workbook, we try to expose only key concepts and ideas, which will save time for practicing and
+reinforcing critical thinking skills which include observing patterns, identifying and analyzing problems, making logic connections, determining problem-solving strategies, and solving problems systematically.
+
+For example, only the method of undetermined coefficient was introduced for factoring trinomials in this book. To factor the trinomial $Ax^2+Bx+C$, where $A$, $B$ and $C$ are integers, we may use trial-and-error method to find integers $m$, $n$, $p$ and $q$ such that $mn=A$, $pq=C$ and $mq+np=B$.
+In practice, we first factor $A$ and $C$, and then use the following diagram to check if $mq+np=B$ holds.
+\begin{center}
+	\begin{tikzpicture}
+		\matrix (m) [
+			matrix of math nodes,
+			row sep=-\pgflinewidth,
+			column sep=-.5\pgflinewidth,
+			minimum width=2em,
+		]
+		{ A=mn                  & {} & C=pq &                        \\[0.5em]
+			m                     & {} & p    &                        \\
+			n                     & {} & q    &                        \\[0.25em]
+			\overset{\phantom{?}}{np} & {\color{red} +} & mq   & \overset{?}{=}B \\
+		};
+		\path
+		(m-2-1) edge (m-3-3)
+		(m-2-3) edge (m-3-1);
+		\draw[red] (m-4-1.north west) -- (m-4-4.north east);
+	\end{tikzpicture}
+\end{center}
+This method is based on the observation that $Ax^2+Bx+C$ can be factored into $(mx+p)(nx+q)$.
+Indeed, observing and making logic connections are very effective in problem-solving.
+
+
+Topics are contained in 25 lessons.  Each lesson corresponds to roughly one class meeting. A lesson starts with a page on concepts, formulas and examples, and ends with exercises that students are expected to complete in class.
+
+We would like to thank our colleagues and students for their feedback and support during the development of this project.
+In particular, we would like to thank 
+Joseph Bertorelli,
+Beata Ewa Carvajal,
+Kwai Chiu,
+Lixu Li,
+Wenjian Liu,
+Nam Jong Moh,
+Tian Ren,
+Kostas Stroumbakis,
+Evelyn Tam,
+and
+Haishen Yao
+for their encouragement, support, and feedback.
+
+
+% \vspace*{\baselineskip}
+\begin{flushright}
+	\parbox{\lengthsignature}{
+		Fei Ye\\
+		Fall 2018
+	}
+\end{flushright}
+
+\let\clearpage\relax
+
+\vspace*{1.5\baselineskip}
+
+\chapter*{Preface to the Second Edition}
+% \addcontentsline{toc}{chapter}{Preface} 
+\markboth{Preface}{} 
+
+
+Effective practice is the key for success. Focusing on key ideas, frequently used problem solving strategies and necessary knowledge is the best way to practice effectively.
+
+In this second edition, more examples and exercises are provided. Some frequently used problem solving strategies and ideas are summarized as tips.
+
+In algebra, problem solving is meaningful, for each step you take, there is always a reason. I hope that you will agree with me and enjoy thinking and understanding the powerful ideas hidden in algebraic problem solving.
+
+
+% \vspace*{\baselineskip}
+\begin{flushright}
+	\parbox{\lengthsignature}{
+		Fei Ye\\
+		Fall 2019
+	}
+\end{flushright}
+
+\renewcommand{\baselinestretch}{1.0}\normalsize

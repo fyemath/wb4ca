@@ -1,0 +1,304 @@
+% !TEX root=../MA119-Main.tex
+
+\paragraph*{Adding or Subtracting Rational Expressions with the Same Denominator}
+		If $P$, $Q$ and $R$ are polynomials with $R\neq 0$, then
+	\[
+		\dfrac{~P~}{~R~}+\dfrac{~Q~}{~R~}=\dfrac{~P+Q~}{~R~}\hspace{0.1\textwidth} \textup{and} \hspace{0.1\textwidth}
+		\dfrac{~P~}{~R~}-\dfrac{~Q~}{~R~}=\dfrac{~P-Q~}{~R~}.
+	\]
+	\vspace*{0.1\baselineskip}
+	\begin{example}
+		Add and simplify 
+		$$
+		\dfrac{x^2+4}{x^2+3x+2}+\dfrac{5x}{x^2+3x+2}.
+		$$
+	\end{example}
+\vspace*{-1.1\baselineskip}
+	\begin{solution}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Determine if the rational expressions have the same denominator. If so, the new numerator will be the sum/difference of the numerators.
+			      \[
+				      \dfrac{x^2+4}{x^2+3x+2}+\dfrac{5x}{x^2+3x+2}=\dfrac{x^2+5x+4}{x^2+3x+2}.
+			      \]
+			\item Simplify the resulting rational expression.
+			      \[
+				      \dfrac{x^2+5x+4}{x^2+3x+2}=\dfrac{(x+1)(x+4)}{(x+1)(x+2)}=\dfrac{x+4}{x+2}.
+			      \]
+		\end{enumerate}
+	\end{solution}
+
+
+	%
+	% \begin{example}
+	% Subtract and simplify $\dfrac{2x^2}{2x^2-x-3}-\dfrac{3x+5}{2x^2-x-3}$.
+	% \[
+	% \dfrac{2x^2}{2x^2-x-3}-\dfrac{3x+5}{2x^2-x-3}=\dfrac{2x^2-3x-5}{2x^2-x-3}=\dfrac{(2x-5)(x+1)}{(2x-3)(x+1)}=\dfrac{2x-5}{2x-3}.
+	% \]
+	% \end{example}
+
+
+% \end{tcolorbox}
+
+% \vspace{-0.1\baselineskip}
+
+
+\paragraph*{Adding or Subtracting Rational Expressions with Different Denominators}
+	To add or subtract rational expressions with different denominators, we need to rewrite the rational expressions to equivalent rational expressions with the same denominator, say the LCD.
+
+\begin{trick}
+	\textbf{Equivalent Reduction.} What if all denominators are the same? How to make denominators the same? Reducing the problem to an easier one using equivalent operations helps solve the problem.
+\end{trick}
+	% \begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+	% 	\item Find the least common denominator (LCD).
+	% 	\item Rewrite each rational expression into an equivalent rational expression with the LCD as the new denominator.
+	% 	\item Add or subtract the resulting rational expressions and simplify.
+	% \end{enumerate}
+
+	% \vspace*{-0.25\baselineskip}
+
+	\begin{example}
+		Find the LCD of $\dfrac{3}{x^2-x-6}$ and $\dfrac{6}{x^2-4}$.
+	\end{example}
+
+	\begin{solution}\mbox{}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Factor each denominator.
+			      \[
+				      \null\hfill x^2-x-6=(x+2)(x-3)\hspace{2\baselineskip} x^2-4=(x-2)(x+2)\hfill\null
+			      \]
+			    %   \vspace*{-1.75\baselineskip}
+			\item \begin{multicols}{2} List the factors of the first denominator and add unlisted factors of the second factor to get the final list.
+
+				      \columnbreak
+
+				      \begin{tabular}{l|c|c|c}
+					      First list  & $(x+2)$ & $(x-3)$ &         \\
+					      Second list & $(x+2)$ &         & $(x-2)$ \\
+					      \hline
+					      Final list  & $(x+2)$ & $(x-3)$ & $(x-2)$
+				      \end{tabular}
+			      \end{multicols}
+			      \vspace*{-0.75\baselineskip}
+			\item The LCD is the product of factors in the final list.\\
+			      \centerline{$(x+2)(x-3)(x-2)$.}
+		\end{enumerate}
+	\end{solution}
+
+	\vspace{-0.25\baselineskip}
+
+	\begin{example}
+		Subtract and simplify 
+		\[\dfrac{x-3}{x^2-2x-8}- \dfrac{1}{x^2-4}\]		
+	\end{example}
+	\begin{solution}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Find the LCD. 
+			% \vspace*{-0.5\baselineskip}
+			      \begin{multicols}{2}
+				      \[x^2-2x-8=(x+2)(x-4)\] \[x^2-4=(x-2)(x+2)\]
+
+				      \columnbreak
+
+				      \begin{tabular}{l|c|c|c}
+					      First list  & $(x+2)$ &         & $(x-4)$ \\
+					      Second list & $(x+2)$ & $(x-2)$ &         \\
+					      \hline
+					      Final list  & $(x+2)$ & $(x-2)$ & $(x-4)$
+				      \end{tabular}
+			      \end{multicols}
+			    %   \vspace*{-\baselineskip}
+			      \hfill The LCD is ~~$(x+2)(x-2)(x-4)$.\hfill\null
+			\item Rewrite each rational expression into an equivalent expression with the LCD as the new denominator. 
+			      \[
+				      \dfrac{x-3}{x^2-2x-8}- \dfrac{1}{x^2-4}=\dfrac{(x-3)(x-2)}{(x+2)(x-2)(x-4)}-\dfrac{(x-4)}{(x+2)(x-2)(x-4)}
+			      \]
+			\item Subtract and simplify.
+			      \[
+				      \dfrac{(x-3)(x-2)-(x-4)}{(x+2)(x-2)(x-4)}=\dfrac{(x^2-5x+6)-(x-4)}{(x+2)(x-2)(x-4)}=\dfrac{x^2-6x+10}{(x+2)(x-2)(x-4)}
+			      \]
+		\end{enumerate}
+	\end{solution}
+% 	\vfill\null
+% \end{tcolorbox}
+
+
+
+\newpage
+
+%\hrule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Add/subtract and simplify.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{x^2+2x-2}{x^2+2x-15}+\dfrac{5x+12}{x^2+2x-15}$
+		\item $\dfrac{3x-10}{x^2-25}-\dfrac{2x-15}{x^2-25}$
+		\item $\dfrac{4}{(x-3)(x+2)}+\dfrac{3x-2}{x^2-x-6}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\dfrac{x+2}{x-3}$
+					\item $\dfrac{1}{x-5}$
+						\item $\dfrac{3 x +2}{(x - 3) (x + 2)}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Find the LCD of rational expressions.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{2x}{2x^2-5x-3}$\quad and \quad $\dfrac{x-1}{x^2-x-6}$
+		\item $\dfrac{9}{7x^2-28x}$ \quad and \quad $\dfrac{2}{x^2-8x+16}$
+		%\item $\dfrac{4}{x-3}+\dfrac{3x-2}{x^2-x-6}$  %\hspace{2cm}
+		%\item $\dfrac{x^2-9}{3x^2-8x-3}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $(2x+1)(x-3)(x+2)$
+					\item $7x(x-4)^2$
+					%	\item $\dfrac{7 x + 6}{(x - 3) (x + 2)}$
+					\hfill\null
+					%\item $(x-2)(x-3)$
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Add and simplify.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{x}{x+1}+\dfrac{x-1}{x+2}$
+		\item $\dfrac{x+2}{2x^2-x-3}+\dfrac{1}{x^2+3x+2}$
+		\item $\dfrac{4}{x-3}+\dfrac{3x-2}{x^2-x-6}$  %\hspace{2cm}
+		%\item $\dfrac{x^2-9}{3x^2-8x-3}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\dfrac{2 x^2 + 2 x - 1}{(x + 1) (x + 2)}$
+					\item $\dfrac{x^2 + 6 x + 1}{(x + 1) (x + 2) (2 x - 3)}$
+					\item $\dfrac{7 x + 6}{(x - 3) (x + 2)}$
+					\hfill\null
+					%\item $(x-2)(x-3)$
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise} Subtract and simplify.
+
+	\noindent
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{3x+5}{x^2-7x+12}-\dfrac{3}{x-3}$
+		\item $\dfrac{y}{y^2-5y-6}-\dfrac{7}{y^2-4y-5}$
+		\item $\dfrac{2x-3}{x^2+3x-10}-\dfrac{x+2}{x^2+2x-8}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $\dfrac{17}{(x - 4) (x - 3)}$
+					\item  $\dfrac{y^2 - 12 y + 42}{(y - 6) (y - 5) (y + 1)}$
+					\item $\dfrac{x^2 - 2 x - 22}{(x - 2) (x + 4) (x + 5)}$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Simplify.
+$$
+\frac{x+11}{7x^2-2x-5}+\frac{x-2}{x-1}-\frac{x}{7x+5}
+$$
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item $\dfrac{6x-1}{7x+5}$
+					\hfill\null
+					%\item $(x-2)(x-3)$
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise} Subtract and simplify.
+	$$
+	\frac{x-1}{x^2-3x}+\frac{4}{x^2-2\:x-3}-\frac{1}{x\left(x+1\right)}
+	$$
+\end{exercise}
+
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~}]
+					\item $\dfrac{x+2}{x(x-3)}$\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

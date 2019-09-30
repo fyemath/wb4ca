@@ -1,0 +1,333 @@
+% !TEX root = ../MA119-Main.tex
+
+\paragraph*{Functions as Relations}
+\dfn{A relation} is a set of ordered pairs. The set of all first components of the ordered pairs is called the \dfn{domain}. The set of all second components of the ordered pairs is called the \dfn{range}.
+
+A \dfn{function} is a relation such that each element in the domain corresponds to \emph{exactly one} element in the range.
+
+\paragraph*{Functions as Equations and Function Notation}
+
+For a function, we usually use the variable $x$ to represent an element from the domain and call it the \dfn{independent variable}. The variable $y$ is used to represent the value  corresponding to $x$ and is called the \dfn{dependent variable}. We say $y$ is a function of $x$. When we consider several functions together, to distinguish them we named functions by a letter such as $f$, $g$, or $F$. The notation $f(x)$, read as \dfn{``$f$ of $x$'' or ``$f$ at $x$''}, represents the output of the function $f$ when the input is  $x$.
+To find the value of a function at a given number, we substitute the independent variable $x$ by the given number and then evaluate the expression. We call the procedure evaluating a function.
+
+\begin{example}
+  Find the indicated function value.\\
+\begin{enumerate*}[label={(\arabic*)~}]
+\item $f(-2)$,\quad $f(x)=2x+1$
+\item $g(2)$,\quad $g(x)=3x^2-10$
+\item $h(a-t)$,\quad $h(x)=3x+5$.
+\end{enumerate*}
+\end{example}
+\begin{solution}
+  \begin{enumerate}[label={\emph{(\arabic*)}~}]
+    \item $f(-2)=2\cdot(-2)+1=-4+1=-3$.
+    \item $g(-2)=3\cdot(2^2)-10=3\cdot 4-10=12-10=2$.
+    \item $h(a-t)=3\cdot(a-t)+5=3a-3t+5$.
+    \end{enumerate}
+\end{solution}
+
+\paragraph*{Functions as Graphs}
+\dfn{The graph of a function} is the graph of its ordered pairs. 
+A graph of ordered pairs $(x,y)$ in the rectangular system defines $y$ as a function of $x$ if any vertical line crosses the graph at most once. This test is called the \dfn{vertical line test}.
+
+\paragraph*{Domain and Range} 
+The domain of a graph is the set of all inputs ($x$-coordinates). The range of a graph is the set of all outputs ($y$-coordinates). 
+To find the domain of a graph, we look for the left and the right endpoints. To find the range of a graph, we look for the highest and the lowest positioned points.
+
+
+\begin{example}
+  Use the graph on the right to answer the following questions.
+  % \vspace{-0.5\baselineskip}
+\begin{multicols}{2} 
+\begin{enumerate}[label={(\arabic*)~}]
+\item Determine whether the graph is a function and explain your answer.
+\item Find the domain (in interval notation) of the graph.
+\item Find the range (in interval notation) of the graph.
+\item Find the interval where the graph is above $2$.
+\item Find the interval where the graph is is decreasing.
+\item Find the extrema if they exist.
+\item Find the value of $x$ such that $(x, 0)$ is on the graph.
+\end{enumerate}
+
+\columnbreak
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[
+  grid=both,
+  ymin=-3,
+  ymax=4,
+  xmax=4,
+  xmin=-3,
+  xtick={-3,-2,...,3,4,5},
+  ytick={-4,-3,-2,...,4,5},
+  minor tick num=1
+]
+ \addplot[thick, samples=100, domain=1:3.7, name path=A, -stealth]   {(x-2)^2+1};
+  \addplot[thick, draw] (1, 2)--(-2,-2);
+  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (-2,-2) {};
+  \end{axis}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+
+\end{example}
+\vspace*{-\baselineskip}
+\begin{solution}
+  \begin{enumerate}[label={\emph{(\arabic*)}~}]
+  \item The graph is a function. Because every vertical line crosses the graph at most once.
+  \item The graph has the left endpoint  at $(-2, -2)$ and but no right endpoint. So the domain is $[-2, +\infty)$.
+  \item The graph has a lowest positioned point $(-2, -2)$ but no highest positioned point. So the range is $[-2, +\infty)$.
+  \item The graph is above 2 over the interval $(3, \infty)$.
+  \item The graph is decreasing over the interval $(1,2)$.
+  \item The graph has minima at $(-2,1)$ and $(2,1)$.
+  \item The point $(x, 0)$ is on the $x$-axis. If $x=-0.5$, then it will be on the graph.
+  \end{enumerate}
+\end{solution}
+
+
+
+\newpage
+
+
+\begin{exercise}
+Find the indicated function values for the functions $f(x)=-x^2+x-1$ and  $g(x)=2x-1$. Simplify your answer.
+
+\noindent
+\begin{enumerate*}[label={(\arabic*)~}]
+\item $f(2)$
+\item $f(-x)$
+\item $g(-1)$
+\item $g(f(1))$
+\hfill\null
+\end{enumerate*}
+\end{exercise}
+
+
+\vspace*{\stretch{2}}
+\begin{center}
+\hfill
+\raisebox{0.4em}{
+\rotatebox{\rotationdegree}{\parbox{\textwidth}{
+  \begin{enumerate*}[label={\theexer~(\arabic*)~}]
+    \item $f(2)=-3$
+    \item $f(-x)=-x^2-x-1$
+    \item  $g(-1)=-3$
+    \item $g(f(1))=-3$
+    \hfill\null
+  \end{enumerate*}
+  }
+}
+}
+\end{center}
+
+\begin{exercise}
+  Suppose $g(x) = -3x + 1$.
+    
+      \begin{enumerate*}[label={(\arabic*)~}]
+      \item
+      Compute $\dfrac{g(4)-g(1)}{4-1}$
+      \item
+      Compute $\dfrac{g(x+h)-g(x)}{h}$
+      \hfill\null
+      \end{enumerate*}
+\end{exercise}
+
+\vspace*{\stretch{2}}
+\begin{center}
+  \hfill
+  \raisebox{0.4em}{
+  \rotatebox{\rotationdegree}{\parbox{\textwidth}{
+    \begin{enumerate*}[label={\theexer~(\arabic*)~}]
+      \item -3
+      \item -3
+      \hfill\null
+    \end{enumerate*}
+    }
+  }
+  }
+  \end{center}
+
+  \begin{exercise}
+    Suppose the domain of the linear function $l(x)=1-2x$ is $(0, 1)$. Find the range of the function.
+  \end{exercise}
+  
+  \vfill
+  \begin{center}
+    \hfill
+    \raisebox{0.4em}{
+    \rotatebox{\rotationdegree}{\parbox{\textwidth}{
+      \begin{enumerate*}[label={\theexer~}]
+        \item $(-1, 1)$.
+        \hfill\null
+      \end{enumerate*}
+      }
+    }
+    }
+    \end{center}
+
+\newpage
+
+\begin{exercise}\label{graph}
+  Use the graph shown on the right to answer the following questions.
+\begin{multicols}{2} 
+
+\begin{enumerate}[label={\textup{(\arabic*)~}}]
+\item Determine whether the graph is a function and explain your answer.
+\item Find the domain of the graph (write the domain in interval notation).
+\item Find the range of the graph (write the range in interval notation).
+\item Find the interval where the graph is above the $x$-axis.
+\item Find all points where the graph reaches a maximum or a minimum.
+\item Find the values of the $x$-coordinate of all points on the graph whose $y$-coordinate is $1$.
+\end{enumerate}
+\columnbreak
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+  grid=both,
+  ymin=-4,
+  ymax=4,
+  xmax=4,
+  xmin=-4,
+  xtick={-4,-3,-2,...,3,4},
+  ytick={-4,-3,-2,...,3,4},
+  minor tick num=1,
+]
+ %\addplot[thick, samples=100,domain=1.05:2.9, name path=A, -stealth]   {(x-1)^3-2};
+ \addplot[thick, samples=100,domain=1.05:2, name path=A]   {(x-1)^3-2};
+\addplot[thick, draw, -stealth] (0.95, 1.92)--(-3.3,-3.3);
+  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (2,-1) {};
+  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt] at (1,-2) {};
+  \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (1,2) {};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+\end{exercise}
+
+
+
+
+
+
+
+\vspace{\stretch{2.5}}
+\begin{center}
+  \hfill
+  \raisebox{0.4em}{
+    \rotatebox{\rotationdegree}{
+      \parbox{\textwidth}{
+        \begin{enumerate*}[label={\theexer~(\arabic*)}]
+          \item  Yes
+          \item $(-\infty, 2]$
+          \item $(-\infty, 2)$ 
+          \item $(1, 1)$
+          \item $(1,2)$
+          \item $x=0$
+          \hfill\null
+        \end{enumerate*}
+      }
+      }
+  }
+\end{center}
+
+
+
+
+
+
+\begin{exercise}\label{graph}
+  Use the graph of a function $f$ shown on the right to answer the following questions.
+\begin{multicols}{2} 
+\begin{enumerate}[label={\textup{(\arabic*)~}}]
+\item Find the $y$-intercept.
+\item Find the value $\dfrac{f(3)-f(0)}{3}$.
+\item Find the values $x$ such that $f(x)=0$.
+\item Find the solution to the inequality $f(x)>0$. Write in interval notation.
+\end{enumerate}
+\columnbreak
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+\begin{axis}[
+  grid=both,
+  ymin=-3,
+  ymax=3,
+  xmax=4,
+  xmin=-4,
+  xtick={-4,-3,-2,...,3,4},
+  ytick={-4,-3,-2,...,3,4},
+  minor tick num=1,
+]
+ \addplot[thick, samples=100, restrict y to domain=-2.9:2.9, name path=A, stealth-stealth]   {1/3*(x+2)*(x-1)*(x-3)};
+% \addplot[thick, draw, -stealth] (0.95, 1.92)--(-3.3,-3.3);
+  % \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (2,-1) {};
+  % \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt] at (1,-2) {};
+  % \node[draw,shape=circle, minimum size=2mm,inner sep=0pt,outer sep=0pt, fill=black] at (1,2) {};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+\end{exercise}
+
+
+\vfill
+\begin{center}
+\hfill
+\raisebox{0.4em}{
+  \rotatebox{\rotationdegree}{
+    \parbox{\textwidth}{
+      \begin{enumerate*}[label={\theexer~}]
+        \item $(0, 2)$
+        \item $-\frac23$
+        \item $\{-2, 1, 3\}$
+        \item $(-2,1)\cup (3, \infty)$.
+        \hfill\null
+      \end{enumerate*}
+    }
+  }
+}
+\end{center}
+
+\newpage
+
+\begin{exercise}
+  Today Matt drove from home to school in 30 minutes. He spent 6 minutes on  local streets before driving on the highway and 4 minutes on local streets towards school after getting off the highway. On local streets, his average speed is 30 miles per hour. On the highway, his average speed is 60 miles per hours. 
+\begin{enumerate}[label={\textup{(\arabic*)~}}]
+\item Write the distance $d$ (in miles) he drove as a function of the time $t$ (in minutes)? 
+\item After 15 minutes, where was he and how far did he drive?
+\item How far did he drive from home to school?
+\end{enumerate}
+\end{exercise}
+
+
+\vfill
+\begin{center}
+\hfill
+\raisebox{0.4em}{
+  \rotatebox{\rotationdegree}{
+    \parbox{\textwidth}{
+      \begin{enumerate*}[label={\theexer~(\arabic*)~}]
+        \item 
+        % $d=\frac12t$ over $[0, 6]$, and $d=t-3$ over $(6, 26]$, and $d=\frac12t+10$ over $(26,30]$.
+        % \qquad
+        % \hfill
+        % \null\\
+        $d=\begin{cases}
+\frac12t & ~\text{if}~ 0\leq t\leq 6 \\ 
+(t-6)+3 & ~\text{if}~ 6< t \le 26 \\
+\frac12(t-26)+23 & ~\text{if}~ 26< t \le 30
+        \end{cases}
+        $
+        \item $12$ miles
+        \item $25$ miles
+        \hfill\null
+      \end{enumerate*}
+    }
+  }
+}
+\end{center}

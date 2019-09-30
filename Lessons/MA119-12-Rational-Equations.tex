@@ -1,0 +1,208 @@
+% !TEX root=../MA119-Main.tex
+
+\paragraph*{Solving Rational Equations by Clearing Denominators}
+	A \dfn{rational equation} is an equation that contains a rational expression.
+
+\begin{trick}
+	\textbf{Reduction with Auxiliary Conditions} Assume that denominators are not zero. One idea to solve a rational equation is to reduce the equation to a polynomial equation by clearing denominators, that is multiplying the LCD to both sides of the equation. Once the polynomial equations is solve, remember to check if there is an \dfn{extraneous solution} which is a solution making a denominator zero.
+\end{trick}	
+
+	
+	% \begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+	% 	\item Find the LCD.
+	% 	\item Clear denominators by multiplying the LCD to both sides.
+	% 	\item Solve the resulting polynomial equation.
+	% 	\item Check if there is an \dfn{extraneous solution} which is a solution that would cause any of the expressions in the original equation to be undefined.
+	% \end{enumerate}
+
+	%\vspace{\baselineskip}
+	%\hrule
+
+	\begin{example}
+		Solve
+		\[
+			\dfrac{5}{x^2-9}=\dfrac{3}{x-3}-\dfrac{2}{x+3}.
+		\]
+
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Find the LCD.\\
+			      Since $x^2-9=(x+3)(x-3)$, the LCD is $(x+3)(x-3)$.
+			\item Clear denominators.\\
+			      Multiply each rational expression in both sides by $(x+3)(x-3)$ and simplify:
+			      \[
+				      \begin{split}
+					      (x+3)(x-3)\cdot\dfrac{5}{x^2-9}&=(x+3)(x-3)\cdot\dfrac{3}{x-3}-(x+3)(x-3)\cdot\dfrac{2}{x+3}\\
+					      5&=3(x+3)-2(x-3)
+				      \end{split}
+			      \]
+			\item Solve the resulting equation.
+			      \[
+				      \begin{split}
+					      5&=3(x+3)-2(x-3)\\
+					      5&=x+15\\
+					      -10&=x
+				      \end{split}
+			      \]
+			\item Check for any extraneous solution by plugging the solution into the LCD to see if it is zero. If it is zero, then the solution is extraneous.
+			      \[
+				      (-10+3)(-10-3)\neq 0
+			      \]
+			      So $x=-10$ is a valid solution of the original equation.
+		\end{enumerate}
+	\end{example}
+
+	% \bigskip
+	% \hrule
+	% \bigskip
+
+	\begin{example}
+		Solve for $x$ from the equation
+		\[
+			\frac{1}{x}+\frac{1}{y}=\dfrac{1}{z}.
+		\]
+
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item The LCD is $xyz$.
+			\item Clear denominators.
+			      \[
+				      \begin{split}
+					      xyz\cdot\frac{1}{x}+xyz\cdot\frac{1}{y}&=xyz\cdot\dfrac{1}{z}\\
+					      yz+xz&=xy\\
+				      \end{split}
+			      \]
+			\item Solve the resulting equation.
+			      \[
+				      \begin{split}
+					      yz+xz&=xy\\
+					      yz&=xy-xz\\
+					      yz&=x(y-z)\\
+					      \dfrac{yz}{y-z}&=x \quad \text{if} y\neq z
+				      \end{split}
+			      \]
+			\item The solution is $x=\dfrac{yz}{y-z}$ if $y\neq z$. If $y=z$, the equation has no solution.
+		\end{enumerate}
+	\end{example}
+
+\begin{note}
+	Another way to solve a rational equations is to rewrite the equation in the form $\frac{p(x)}{q(x)}=0$ using properties of rational expressions, then solve $p(x)=0$ and check.
+\end{note}
+
+
+\newpage
+
+%\hrule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve.\\[4pt]
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac1{x+1}+\dfrac1{x-1}=\dfrac4{x^2-1}$
+		\item $\dfrac{30}{x^2-25}=\dfrac3{x+5}+\dfrac2{x-5}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=2$
+					\item $x=7$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+%\vspace{-1.5\baselineskip}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve.\\[4pt]
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $\dfrac{2x-1}{x^2+2x-8}=\dfrac1{x-2}-\dfrac{2}{x+4}$
+		\item $\dfrac{3x}{x-5}=\dfrac{2x}{x+1}-\dfrac{42}{x^2-4x-5}$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=3$
+					\item $x=-6$ or $x=-7$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve a variable from a formula.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item Solve for $f$ from\quad $\dfrac1p+\dfrac1q=\dfrac1f$.
+		\item Solve for $x$ from\quad $A=\dfrac{f+cx}{x}$.
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $f=\dfrac{pq}{p+q}$ if $p\neq -q$.
+					\item $x=\dfrac{f}{A-c}$ if $A\neq c$.
+					%	\item $\dfrac{7 x + 6}{(x - 3) (x + 2)}$
+					\hfill\null
+					%\item $(x-2)(x-3)$
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}
+	Solve for $x$ from the equation.\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $2(x+1)^{-1}+x^{-1}=2$.
+		\item $\displaystyle\frac{a^2x +2a}{x^{-1}}=-1$.
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=-\frac12$~~or~~$x=1$
+					\item $x=-\frac1a$ if $a\neq 0$.
+					%  otherwise, no solution.
+					%	\item $\dfrac{7 x + 6}{(x - 3) (x + 2)}$
+					\hfill\null
+					%\item $(x-2)(x-3)$
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}

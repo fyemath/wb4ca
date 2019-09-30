@@ -1,0 +1,197 @@
+% !TeX program = pdflatex
+
+\documentclass[11pt, math=mtpro2, color=blue, lang=en, mode=fancy]{CLS/elegantbookr}
+
+% \documentclass[11pt, math=mtpro2, color=blue, lang=en]{elegantbook}
+
+
+\usepackage{CLS/wb4ca}
+\usepackage{longtable}
+
+\geometry{
+	letterpaper,
+	top=0.9in,
+	bottom=0.8in,
+	left=0.8in,
+	right=0.8in,
+	% footsep=0pt
+	}
+
+
+
+\fancyheadoffset[LO,LE]{0cm}
+
+	
+\setlength\columnsep{10pt}
+\setlength{\footskip}{6pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 1pt minus 1pt}
+\setlength{\parsep}{2pt plus 1pt minus 1pt}
+\setlength{\topsep}{2pt plus 1pt minus 1pt}
+\setlength{\multicolsep}{1pt plus 1pt minus 1pt}
+
+\def\rotationdegree{180}
+
+\raggedcolumns % to align multicols by top.
+
+
+\begin{document}
+
+% \maketitle
+
+\input{frontmatter/title-page.tex}
+
+% \newpage
+
+% \frontmatter
+
+\input{frontmatter/preface1.tex}
+
+\newpage
+
+\blankpage
+
+% \input{frontmatter/preface2.tex}
+
+% \newpage
+
+% \blankpage
+
+\input{frontmatter/toc.tex}
+\newpage
+
+\blankpage
+
+\mainmatter
+
+\renewcommand{\baselinestretch}{1.05}\normalsize
+
+\chapter{Linear Inequalities}
+\import{Lessons/}{MA119-05-Linear-Inequalities.tex}
+\newpage
+
+
+\chapter{Absolute Value Equations}
+\import{Lessons/}{MA119-06-Absolute-Value-Eq.tex}
+\newpage
+
+% \blankpage
+
+\chapter{Properties of Integral Exponents}
+\import{Lessons/}{MA119-01-Exponents.tex}
+\newpage
+
+% \blankpage
+
+\chapter{Introduction to Functions}
+\import{Lessons/}{MA119-02-Introduction-Functions-and-Graphs.tex}
+\newpage
+
+% \blankpage
+
+\chapter{Linear functions}
+\import{Lessons/}{MA119-03-a-Linear-Functions.tex}
+\newpage
+
+
+\chapter{Perpendicular and Parallel Lines}
+\import{Lessons/}{MA119-03c-More-Linear-Functions(Perp-Parallel).tex}
+\newpage
+
+
+\chapter{Systems of Linear Equations}
+\import{Lessons/}{MA119-04-Linear-Systems.tex}
+\newpage
+
+
+\chapter{Factoring Review}
+\import{Lessons/}{MA119-07-Factoring-Review.tex}
+\newpage
+
+
+\chapter{Solve Quadratic Equations by Factoring}
+\import{Lessons/}{MA119-08-Quadratic-Equations-by-Factoring.tex}
+\newpage
+
+% \blankpage
+
+\chapter{Multiply or Divide Rational Expressions}
+\import{Lessons/}{MA119-09-Multiplying-Dividing-Rational-Expressions.tex}
+\newpage
+
+\chapter{Add or Subtract Rational Expressions}
+\import{Lessons/}{MA119-10-Adding-Subtracting-Rational-Expressions.tex}
+\newpage
+
+\chapter{Complex Rational Expressions}
+\import{Lessons/}{MA119-11-Complex-Rational-Expressions.tex}
+\newpage
+
+
+\chapter{Rational Equations}
+\import{Lessons/}{MA119-12-Rational-Equations.tex}
+\newpage
+
+
+\chapter{Radical Expressions: Concepts and Properties}
+\import{Lessons/}{Math119-13-Radical-Expressions-Rational-Exponents.tex}
+\newpage
+
+
+% \blankpage
+
+\chapter{Algebra of Radicals}
+\import{Lessons/}{Math119-16-Multiply-Add-Radicals.tex}
+\newpage
+
+%\blankpage
+
+\chapter{Solve Radical Equations}
+\import{Lessons/}{Math119-17-Solve-Radical-Equations.tex}
+\newpage
+
+
+\chapter{Complex Numbers}
+\import{Lessons/}{Math119-18-Complex-Numbers.tex}
+\newpage
+
+\chapter{Complete the Square}
+\import{Lessons/}{Math119-19-Completing-Square.tex}
+\newpage
+
+
+\chapter{Quadratic Formula}
+\import{Lessons/}{Math119-20-Quadratic-formula.tex}
+\newpage
+
+
+\chapter{Quadratic Functions}
+\import{Lessons/}{Math119-21-Graph-Quadratic.tex}
+\newpage
+
+
+
+\chapter{Rational and Radical Functions}
+\import{Lessons/}{Math119-21half-Rational-Radical-functions.tex}
+\newpage
+
+
+\chapter{Exponential Functions}
+\import{Lessons/}{Math119-23-Exponential-Functions.tex}
+\newpage
+
+
+\chapter{Logarithmic Functions}
+\import{Lessons/}{Math119-25-Logarithmic-Functions.tex}
+\newpage
+
+\chapter{Properties of Logarithms}
+\import{Lessons/}{Math119-26-Properties-of-Logarithms.tex}
+\newpage
+
+\chapter{Exponential and Logarithmic Equations}
+\import{Lessons/}{Math119-28-Exponential-and-Logarithms-Equations.tex}
+\newpage
+
+
+\end{document}

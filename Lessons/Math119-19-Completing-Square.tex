@@ -1,0 +1,198 @@
+% !TEX root=../MA119-Main.tex
+
+
+\paragraph*{The Square Root Property}
+	Suppose that $X^2=d$. Then $X=\sqrt{d}$ or $X=-\sqrt{d}$, or simply $X=\pm\sqrt{d}$.
+
+\paragraph*{Complete the Square}The square root property provides another ideal to solve a quadratic equation, which is by completing the square. This method is based on the following observations:
+	\[
+		x^2+{\boldsymbol{b}}x+{\boldsymbol{\left(\frac b2\right)^2}}=\left(x+{\boldsymbol{\frac b2}}\right)^2,
+	\]
+	and more generally, let $f(x)=ax^2+bx+c$, and $h=-\frac{b}{2a}$, then
+	\[
+	ax^2+bx+c=a(x-h)^2+f(h)=a\left(x+\frac{b}{2a}\right)^2+\frac{4ac-b^2}{4a^2}.
+	\]
+	The procedure to rewrite a trinomial as the sum of a perfect square and a constant is called \dfn{completing the square}.
+
+
+\paragraph*{Solving by Completing the Square using $x^2+{b}x+{\left(\frac b2\right)^2}=\left(x+{\frac b2}\right)^2$}
+\mbox{}
+	\begin{example}
+		Solve the equation $x^2+2x-1=0$.
+	\end{example}
+	\begin{solution}\mbox{}
+		\vspace{-0.25em}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Isolate the constant.
+			      \[x^2+2x=1\]
+			\item With $b=2$, add $\left(\frac 22\right)^2$ to both sides to complete a square for the binomial $x^2+bx$.
+			      \[
+				      \begin{split}
+					      x^2+2x+\left(\frac22\right)^2&=1+\left(\frac22\right)^2\\\
+					      \left(x+\frac22\right)^2&=1+1\\
+					      (x+1)^2&=2\\
+				      \end{split}
+			      \]
+			\item Solve the resulting equation using the square root property.
+			      \begin{alignat*}{3}
+				      x+1 & =\sqrt2    &  & \ctc{or} & x+1 & =-\sqrt2   \\
+				      x   & =-1+\sqrt2 &  & \ctc{or} & x   & =-1-\sqrt2
+			      \end{alignat*}
+			    %   Note that the solution can also be written as $x=-1\pm\sqrt2$.
+		\end{enumerate}
+	\end{solution}
+
+
+	\begin{example}
+		Solve the equation $-2x^2+8x-9=0$.
+	\end{example}
+	\begin{solution}\mbox{}
+		\vspace{-0.25em}
+		\begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+			\item Isolate the constant.
+			      \[-2x^2+8x=9\]
+			\item Divide by $-2$ to rewrite the equation in $x^2+Bx=C$ form
+			      \[x^2-4x=-\frac{9}{2}\]
+			\item With $b=-4$, add $\left(\frac{-4}{2}\right)^2=4$ to both sides to complete the square for the binomial $x^2-4x$.
+			      \[
+				      \begin{split}
+					      x^2-4x+4&=-\frac{9}{2}+4\\\
+					      (x-2)^2&=-\frac{1}{2}
+				      \end{split}
+			      \]
+			\item Solve the resulting equation and simplify.
+			      \begin{alignat*}{3}
+				      x-2 & =\frac{\ii}{\sqrt{2}}    &  & \ctc{or} & x-2 & =-\frac{\ii}{\sqrt{2}}   \\
+				      x   & =2+\frac{\sqrt{2}}{2}\ii &  & \ctc{or} & x   & =2-\frac{\sqrt{2}}{2}\ii
+			      \end{alignat*}
+			    %   The solutions are $x=2\pm\frac{\sqrt{2}}{2}\ii$.
+		\end{enumerate}
+	\end{solution}
+
+	\begin{note}
+		Another way to complete the square is to use the formula $ax^2+bx+c=a(x-h)^2+f(h)$.
+	\end{note}
+	% \begin{example}
+	% Write the trinomial $x^2-6x+4$ into the form $(x+B)^2+C$ from.
+	% \begin{solution}\mbox{}\vspace{-0.25em}
+	% \begin{enumerate}[label={\textbf{\textup{Step \arabic*.}}~}]
+	% \item Complete the square for $x^2-6x$.
+	% 	\[
+	% 		x^2-6x=(x-3)^2-\left(\frac62\right)^2=(x-3)^3-9
+	% 	\]
+	% \item Rewrite the original trinomial into the form $(x-3)^2+C$
+	% \[x^2-6x+4=(x-3)^3-9+4=(x-3)^3-5.\]
+	% \end{enumerate}
+	% \end{solution}
+	% \end{example}
+
+
+
+\newpage
+
+\begin{exercise}
+	Solve the quadratic equation by the square root property. \\
+	\begin{enumerate*}[label={(\arabic*)~~}]
+		\item $4x^2=20$
+		\item $2x^2-6=0$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=\pm\sqrt{5}$
+					\item $x=\pm\sqrt{3}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+
+\begin{exercise}
+	Solve the quadratic equation by the square root property. \\
+	\begin{enumerate*}[label={(\arabic*)~~}]
+		\item $(x-3)^2=10$
+		\item $4(x+1)^2+25=0$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=3\pm\sqrt{10}$
+					\item $x=-1\pm\frac{5}{2}\ii$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\newpage
+
+\begin{exercise}Solve the quadratic equation \textbf{\em by completing the square.}
+	\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $x^2-6x+25=0$
+		\item $x^2+4x-3=0$
+		\item $x^2-3x-5=0$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=3\pm4\ii$
+					\item $x=-2\pm\sqrt{7}$
+					\item $x=\frac{3\pm\sqrt{29}}{2}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
+
+\begin{exercise}Solve the quadratic equation \textbf{\em by completing the square.}
+	\\
+	\begin{enumerate*}[label={(\arabic*)~}]
+		\item $x^2+x-1=0$
+		\item $x^2+8x+12=0$
+		\item $3x^2+6x-1=0$
+		\hfill\null
+	\end{enumerate*}
+\end{exercise}
+
+%%%%%%
+\vfill
+\begin{center} \hfill
+	\raisebox{0.4em}{
+		\rotatebox{\rotationdegree}{
+			\parbox{\textwidth}{
+				\begin{enumerate*}[label={\theexer~(\arabic*)~}]
+					\item $x=\frac{-1\pm\sqrt{5}}{2}$
+					\item $x=-6$ or $x=-2$
+					\item $x=-1\pm\frac{2\sqrt{3}}{3}$
+					\hfill\null
+				\end{enumerate*}
+			}
+		}
+	}
+\end{center}
